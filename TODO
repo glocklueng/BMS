@@ -1,13 +1,11 @@
-Make DC/DC convertor
-
-Putl BQ7** in schenatic lib and all other comp thats missing
+Make DC/DC converter
 
 Add all missing comp to pcb new pretty lib
 
 Chose what MCU we are going to use (must have CAN interface and presumably one other like SMBus or I2C or maybe 1W for communication with ECU) also it should hold control of two bq7* (they are the same sheet)`   
-Some possible MCU-s stm32f4(maybe to much but we have some basic code for CAN etc.), some TI ARM cortec m4, DSC from maxim
+Some possible MCU-s stm32f4(maybe to much processor power but we have some basic code for CAN etc.), some TI ARM cortec m4, DSC from Maxim(not magazine; it company)
 
-After picking MCU make basic code for communication with BQ(look datasheet for exp.) 
+After picking MCU make basic code for communication with BQ(look datasheet for exp.)
 
 Basic block diagram of battery balancing
 
@@ -15,7 +13,13 @@ Code for are board
 
 PCB designn (be carefull 100V and more) - 2 PCB one BMS other DC/DC(BMS board is controling DC/DC board maybe you can put another MCU on that board)
 
-Because batterys would be on two sides a seperate BMS board with two separated(but they should communicate with each other and if we are going to this desing we could add another MCU just for comm with ECU) 
+Because batterys would be on two sides a separate BMS board with two separated(but they should communicate with each other and if we are going to this design we could add another MCU just for comm with ECU) 
+
+IN this document ECU is a RaspPI and its only purpose is monitor and general control
 
 
-IN this document ECU is a RaspPI and its only purpose is monitor and general contorl
+#########################################################################################################################
+# Done stuff(just for record) - you can place in other file if you want
+#########################################################################################################################
+
+Putl BQ7** in schenatic lib and all other comp thats missing

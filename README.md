@@ -6,6 +6,6 @@ Features:
 here goes features
 
 
-Pic
+Pictures
 
-Description 
+Description
