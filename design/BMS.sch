@@ -36,11 +36,11 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 68
 Title ""
 Date ""
 Rev ""
-Comp ""
+Comp "FESB"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -155,5 +155,11 @@ S 1274 6726 976  374
 U 55BBA6A3
 F0 "Battery cell" 60
 F1 "Batt.sch" 60
+$EndSheet
+$Sheet
+S 8850 5450 2250 700 
+U 3A58CB36
+F0 "Battery_pack" 60
+F1 "Batt_pack.sch" 20
 $EndSheet
 $EndSCHEMATC
