@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 10
+Sheet 3 30
 Title ""
 Date ""
 Rev ""
@@ -2906,7 +2906,7 @@ DA BB 24 68 56 F5 04 ED A2 0E F4 F4 F4 52 52 52 B8 5C 2E 8C 7D 52 5B 21 21 21 F5
 00 00 00 B4 1D 0B E6 2C 02 00 00 00 00 00 00 5A 85 C5 62 75 76 11 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 28 F5 FF 00 A1 2A 35 C4 84 81 83 FF 00 00 00 00 49 45 4E 44 AE 
-42 60 82 00 
+42 60 82 0A 
 EndData
 $EndBitmap
 $Bitmap
@@ -6277,7 +6277,7 @@ AC AC 5C BE 7C 79 5F 5F 1F 7C 43 F5 FC F9 F3 3C 1E EF EC D9 B3 83 0F 84 20 23 48
 F7 01 0E 87 1B EB 22 BC 6F 50 95 22 E3 19 8A D9 08 32 21 0D 0C 0C B0 58 AC BF 1D E3 86 BC 15 3E 
 9F DF D1 D1 31 D6 A5 40 90 E1 4D 94 96 C0 77 F7 E1 9C E9 BB 40 B5 84 6A 00 41 90 F1 06 B5 8D 23 
 08 82 20 C8 04 83 62 36 82 20 08 82 4C 0C 38 D4 12 88 20 08 82 20 E3 1C 1A 1D 89 20 08 82 20 08 
-82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 17 
+82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 D6 
 EndData
 $EndBitmap
 Text Notes 650  2200 0    60   ~ 0
@@ -7303,23 +7303,23 @@ $EndSheet
 $Comp
 L R R?
 U 1 1 558476E6
-P 7700 1300
-F 0 "R?" V 7780 1300 40  0000 C CNN
-F 1 "1M" V 7707 1301 40  0000 C CNN
-F 2 "" V 7630 1300 30  0000 C CNN
-F 3 "" H 7700 1300 30  0000 C CNN
-	1    7700 1300
+P 7700 1450
+F 0 "R?" V 7780 1450 40  0000 C CNN
+F 1 "1M" V 7707 1451 40  0000 C CNN
+F 2 "" V 7630 1450 30  0000 C CNN
+F 3 "" H 7700 1450 30  0000 C CNN
+	1    7700 1450
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 5584794D
-P 7700 950
-F 0 "#PWR?" H 7700 950 30  0001 C CNN
-F 1 "GND" H 7700 880 30  0001 C CNN
-F 2 "" H 7700 950 60  0000 C CNN
-F 3 "" H 7700 950 60  0000 C CNN
-	1    7700 950 
+P 7700 1100
+F 0 "#PWR?" H 7700 1100 30  0001 C CNN
+F 1 "GND" H 7700 1030 30  0001 C CNN
+F 2 "" H 7700 1100 60  0000 C CNN
+F 3 "" H 7700 1100 60  0000 C CNN
+	1    7700 1100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -7389,7 +7389,7 @@ F 3 "" H 6200 2200 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 9800 5800 2    60   Input ~ 0
--BATT
++BATT_out
 $Comp
 L C C?
 U 1 1 55BCB234
@@ -7529,31 +7529,18 @@ $EndComp
 $Comp
 L DIODE D?
 U 1 1 55BCE59F
-P 6500 4500
-F 0 "D?" H 6500 4600 40  0000 C CNN
-F 1 "DIODE" H 6500 4400 40  0000 C CNN
-F 2 "" H 6500 4500 60  0000 C CNN
-F 3 "" H 6500 4500 60  0000 C CNN
-	1    6500 4500
+P 6750 4500
+F 0 "D?" H 6750 4600 40  0000 C CNN
+F 1 "DIODE" H 6750 4400 40  0000 C CNN
+F 2 "" H 6750 4500 60  0000 C CNN
+F 3 "" H 6750 4500 60  0000 C CNN
+	1    6750 4500
 	0    -1   -1   0   
 $EndComp
-Text Label 6500 4850 2    60   Italic 0
+Text Label 6750 4850 2    60   Italic 0
 VC15
-$Comp
-L C C?
-U 1 1 55BCED3D
-P 6850 4500
-F 0 "C?" H 6850 4600 40  0000 L CNN
-F 1 "Cf" H 6856 4415 40  0000 L CNN
-F 2 "" H 6888 4350 30  0000 C CNN
-F 3 "" H 6850 4500 60  0000 C CNN
-	1    6850 4500
-	1    0    0    -1  
-$EndComp
-Text Notes 7150 4450 2    30   Italic 0
+Text Notes 4900 5800 2    30   Italic 0
 Should be high value\n
-Text Label 6850 4850 2    50   Italic 0
-VC10X
 Text Label 5900 3700 2    50   Italic 0
 VC10X
 $Comp
@@ -7685,6 +7672,375 @@ Text HLabel 6950 2700 0    60   Input ~ 0
 SCL
 Text HLabel 6950 2600 0    60   Input ~ 0
 SDA
+$Comp
+L C C?
+U 1 1 55BCD3D7
+P 5100 2200
+F 0 "C?" V 4950 2150 40  0000 L CNN
+F 1 "4.7u" V 5250 2150 40  0000 L CNN
+F 2 "" H 5138 2050 30  0000 C CNN
+F 3 "" H 5100 2200 60  0000 C CNN
+	1    5100 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55BCD4C0
+P 4750 2250
+F 0 "#PWR?" H 4750 2250 30  0001 C CNN
+F 1 "GND" H 4750 2180 30  0001 C CNN
+F 2 "" H 4750 2250 60  0000 C CNN
+F 3 "" H 4750 2250 60  0000 C CNN
+	1    4750 2250
+	1    0    0    -1  
+$EndComp
+Text HLabel 5450 2050 0    60   Input ~ 0
+Vcc
+Text Notes 5700 4200 0    40   ~ 0
+Max BAT-VSS = 36V/25V\nso R must be quite high \n1M
+Text Label 6600 3400 0    60   ~ 0
+VC5X
+Text Label 6550 2350 2    60   ~ 0
+VSS
+$Sheet
+S 7100 -1250 1950 750 
+U 55BD394E
+F0 "Battery ballancing and mesurment" 60
+F1 "Batt_ball.sch" 60
+$EndSheet
+Text Label 4300 5600 2    60   ~ 0
+VSS
+Text Label 4300 6400 2    60   ~ 0
+VC10X
+Text Label 4300 6000 2    60   ~ 0
+VC5X
+$Comp
+L C C?
+U 1 1 55BD7EDC
+P 5000 5800
+F 0 "C?" H 5000 5900 40  0000 L CNN
+F 1 "Cf" H 5006 5715 40  0000 L CNN
+F 2 "" H 5038 5650 30  0000 C CNN
+F 3 "" H 5000 5800 60  0000 C CNN
+	1    5000 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 55BD7FD5
+P 5000 6200
+F 0 "C?" H 5000 6300 40  0000 L CNN
+F 1 "Cf" H 5006 6115 40  0000 L CNN
+F 2 "" H 5038 6050 30  0000 C CNN
+F 3 "" H 5000 6200 60  0000 C CNN
+	1    5000 6200
+	1    0    0    -1  
+$EndComp
+Text Label 6300 4850 2    60   ~ 0
+BATT
+Text Label 4250 6800 2    60   ~ 0
+BATT
+$Comp
+L C C?
+U 1 1 55BD8ED7
+P 5000 6600
+F 0 "C?" H 5000 6700 40  0000 L CNN
+F 1 "Cf" H 5006 6515 40  0000 L CNN
+F 2 "" H 5038 6450 30  0000 C CNN
+F 3 "" H 5000 6600 60  0000 C CNN
+	1    5000 6600
+	1    0    0    -1  
+$EndComp
+Text Notes 3950 5450 0    60   ~ 0
+Capactior between termistors
+$Comp
+L C C?
+U 1 1 55BDCF5F
+P 6150 1850
+F 0 "C?" H 6150 1950 40  0000 L CNN
+F 1 "C" H 6156 1765 40  0000 L CNN
+F 2 "" H 6188 1700 30  0000 C CNN
+F 3 "" H 6150 1850 60  0000 C CNN
+	1    6150 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 55BDD023
+P 5700 1950
+F 0 "#PWR?" H 5700 1950 30  0001 C CNN
+F 1 "GND" H 5700 1880 30  0001 C CNN
+F 2 "" H 5700 1950 60  0000 C CNN
+F 3 "" H 5700 1950 60  0000 C CNN
+	1    5700 1950
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 10000 6000 500  150 
+U 55BDFAF2
+F0 "Battery" 60
+F1 "Batt_ball_cap.sch" 60
+$EndSheet
+Text Label 5350 6000 0    60   ~ 0
+A
+Text Label 5350 6400 0    60   ~ 0
+B
+$Sheet
+S 9550 4050 750  200 
+U 3A501D31
+F0 "BatteryVC1-2" 60
+F1 "Batt_ball.sch" 60
+F2 "VC_1" I L 9550 4100 60 
+F3 "VC_0" I L 9550 4200 60 
+F4 "VC_1d" I R 10300 4100 60 
+F5 "VC_0d" I R 10300 4200 60 
+$EndSheet
+$Sheet
+S 9550 3700 750  200 
+U 3A5031D0
+F0 "BatteryVC2-3" 60
+F1 "Batt_ball.sch" 60
+F2 "VC_1" I L 9550 3750 60 
+F3 "VC_0" I L 9550 3850 60 
+F4 "VC_1d" I R 10300 3750 60 
+F5 "VC_0d" I R 10300 3850 60 
+$EndSheet
+$Sheet
+S 9550 3350 750  200 
+U 3A507C61
+F0 "BatteryVC3-4" 60
+F1 "Batt_ball.sch" 60
+F2 "VC_1" I L 9550 3400 60 
+F3 "VC_0" I L 9550 3500 60 
+F4 "VC_1d" I R 10300 3400 60 
+F5 "VC_0d" I R 10300 3500 60 
+$EndSheet
+$Sheet
+S 9550 3000 750  200 
+U 3A50984C
+F0 "BatteryVC4-5" 60
+F1 "Batt_ball_end.sch" 60
+F2 "VC_1" I L 9550 3050 60 
+F3 "VC_0" I L 9550 3150 60 
+F4 "VC_1d" I R 10300 3050 60 
+F5 "VC_0d" I R 10300 3150 60 
+$EndSheet
+$Sheet
+S 9550 2100 750  200 
+U 3A509CE9
+F0 "BatteryVC6-7" 20
+F1 "Batt_ball.sch" 20
+F2 "VC_1" I L 9550 2150 60 
+F3 "VC_0" I L 9550 2250 60 
+F4 "VC_1d" I R 10300 2150 60 
+F5 "VC_0d" I R 10300 2250 60 
+$EndSheet
+$Sheet
+S 9550 2450 750  400 
+U 3A50D488
+F0 "BatteryVC5b-6" 20
+F1 "Batt_ball_cap.sch" 20
+F2 "VC_1" I L 9550 2500 60 
+F3 "VC_0" I L 9550 2600 60 
+F4 "VC_1d" I R 10300 2500 60 
+F5 "VC0_cap" I R 10300 2800 60 
+F6 "Rx" I R 10300 2700 60 
+F7 "VC_0d" I R 10300 2600 60 
+$EndSheet
+$Comp
+L R R
+U 1 1 3A50FF92
+P 10950 2700
+F 0 "R" V 11030 2700 40  0000 C CNN
+F 1 "Rf 1M" V 10957 2701 40  0000 C CNN
+F 2 "" V 10880 2700 30  0000 C CNN
+F 3 "" H 10950 2700 30  0000 C CNN
+	1    10950 2700
+	0    1    1    0   
+$EndComp
+Text Label 11400 2700 0    60   ~ 0
+A
+$Comp
+L C Cc5
+U 1 1 3A513D90
+P 10850 2450
+F 0 "Cc5" H 10850 2550 40  0000 L CNN
+F 1 "C" H 10856 2365 40  0000 L CNN
+F 2 "" H 10888 2300 30  0000 C CNN
+F 3 "" H 10850 2450 60  0000 C CNN
+	1    10850 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 3A5210D8
+P 10900 4650
+F 0 "R?" V 10980 4650 40  0000 C CNN
+F 1 "Rf 1M" V 10907 4651 40  0000 C CNN
+F 2 "" V 10830 4650 30  0000 C CNN
+F 3 "" H 10900 4650 30  0000 C CNN
+	1    10900 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L C Cc?
+U 1 1 3A5210DE
+P 10800 4400
+F 0 "Cc?" H 10800 4500 40  0000 L CNN
+F 1 "C" H 10806 4315 40  0000 L CNN
+F 2 "" H 10838 4250 30  0000 C CNN
+F 3 "" H 10800 4400 60  0000 C CNN
+	1    10800 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 3A521A97
+P 11150 4900
+F 0 "#PWR?" H 11150 4900 30  0001 C CNN
+F 1 "GND" H 11150 4830 30  0001 C CNN
+F 2 "" H 11150 4900 60  0000 C CNN
+F 3 "" H 11150 4900 60  0000 C CNN
+	1    11150 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 800  1150 0    60   ~ 0
+VSS is same as ground symbol in this sheet
+Text Notes 4900 6200 2    30   Italic 0
+Should be high value\n
+Text Notes 4900 6600 2    30   Italic 0
+Should be high value\n
+Text Notes 4400 550  0    39   ~ 0
+Because a voltage to REGSRC is to high we are going to use FET for limiting
+Text Notes 4200 1450 0    31   ~ 0
+Reflection wire or gate opening(proprtional to voltage diff)
+$Sheet
+S 9550 4400 750  400 
+U 3A51DCAC
+F0 "BatteryVC0-1" 60
+F1 "Batt_ball_cap.sch" 60
+F2 "VC_1" I L 9550 4450 60 
+F3 "VC_0" I L 9550 4550 60 
+F4 "VC_1d" I R 10300 4450 60 
+F5 "VC_0d" I R 10300 4550 60 
+F6 "VC0_cap" I R 10300 4750 60 
+F7 "Rx" I R 10300 4650 60 
+$EndSheet
+Text Notes 10350 3100 0    20   ~ 0
+This should be end batt or basicly end on every block
+$Sheet
+S 9550 1800 750  200 
+U 3A53CBC8
+F0 "BatteryVC7-8" 20
+F1 "Batt_ball.sch" 20
+F2 "VC_1" I L 9550 1850 60 
+F3 "VC_0" I L 9550 1950 60 
+F4 "VC_1d" I R 10300 1850 60 
+F5 "VC_0d" I R 10300 1950 60 
+$EndSheet
+$Sheet
+S 9550 1500 750  200 
+U 3A5401FD
+F0 "BatteryVC8-9" 20
+F1 "Batt_ball.sch" 20
+F2 "VC_1" I L 9550 1550 60 
+F3 "VC_0" I L 9550 1650 60 
+F4 "VC_1d" I R 10300 1550 60 
+F5 "VC_0d" I R 10300 1650 60 
+$EndSheet
+$Sheet
+S 9550 1200 750  200 
+U 3A54231A
+F0 "BatteryVC9-10" 20
+F1 "Batt_ball.sch" 20
+F2 "VC_1" I L 9550 1250 60 
+F3 "VC_0" I L 9550 1350 60 
+F4 "VC_1d" I R 10300 1250 60 
+F5 "VC_0d" I R 10300 1350 60 
+$EndSheet
+Text Label 9600 5150 0    59   ~ 0
+VC5X
+$Comp
+L DIODE D?
+U 1 1 3A546593
+P 8600 4850
+F 0 "D?" H 8600 4950 40  0000 C CNN
+F 1 "DIODE" H 8600 4750 40  0000 C CNN
+F 2 "" H 8600 4850 60  0000 C CNN
+F 3 "" H 8600 4850 60  0000 C CNN
+	1    8600 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 3A547AB5
+P 8850 4850
+F 0 "D?" H 8850 4950 40  0000 C CNN
+F 1 "DIODESCH" H 8850 4750 40  0000 C CNN
+F 2 "" H 8850 4850 60  0000 C CNN
+F 3 "" H 8850 4850 60  0000 C CNN
+	1    8850 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 3A547BB0
+P 9100 4850
+F 0 "D?" H 9100 4950 40  0000 C CNN
+F 1 "DIODESCH" H 9100 4750 40  0000 C CNN
+F 2 "" H 9100 4850 60  0000 C CNN
+F 3 "" H 9100 4850 60  0000 C CNN
+	1    9100 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 3A547CA6
+P 9350 4850
+F 0 "D?" H 9350 4950 40  0000 C CNN
+F 1 "DIODESCH" H 9350 4750 40  0000 C CNN
+F 2 "" H 9350 4850 60  0000 C CNN
+F 3 "" H 9350 4850 60  0000 C CNN
+	1    9350 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 3A549A89
+P 8850 5350
+F 0 "D?" H 8850 5450 40  0000 C CNN
+F 1 "DIODESCH" H 8850 5250 40  0000 C CNN
+F 2 "" H 8850 5350 60  0000 C CNN
+F 3 "" H 8850 5350 60  0000 C CNN
+	1    8850 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 3A54B4D8
+P 9100 5350
+F 0 "D?" H 9100 5450 40  0000 C CNN
+F 1 "DIODESCH" H 9100 5250 40  0000 C CNN
+F 2 "" H 9100 5350 60  0000 C CNN
+F 3 "" H 9100 5350 60  0000 C CNN
+	1    9100 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODESCH D?
+U 1 1 3A54B5D6
+P 9350 5350
+F 0 "D?" H 9350 5450 40  0000 C CNN
+F 1 "DIODESCH" H 9350 5250 40  0000 C CNN
+F 2 "" H 9350 5350 60  0000 C CNN
+F 3 "" H 9350 5350 60  0000 C CNN
+	1    9350 5350
+	0    1    1    0   
+$EndComp
+Text Notes 8550 5050 0    24   ~ 0
+Schottky diode for avoding high current on pin(We go to 50A+ so..)
+Text Notes 9050 300  0    39   ~ 0
+Mess bellow. Batt_ball circuit are sharing every pin expect last and first\nSo becase they are sharing pin they are sharing a Rin so only\nlast should have it.(IN every block).
 Wire Wire Line
 	6450 2500 6450 2900
 Wire Wire Line
@@ -7714,7 +8070,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 3700 6950 3700
 Wire Wire Line
-	7700 1050 7700 950 
+	7700 1200 7700 1100
 Wire Wire Line
 	5300 2800 6950 2800
 Connection ~ 5700 2800
@@ -7755,22 +8111,13 @@ Connection ~ 6550 2500
 Wire Wire Line
 	5850 4200 5350 4200
 Wire Wire Line
-	6350 4200 6950 4200
+	6750 4200 6750 4300
+Connection ~ 6750 4200
 Wire Wire Line
-	6500 4200 6500 4300
-Connection ~ 6500 4200
-Wire Wire Line
-	6500 4700 6500 4850
+	6750 4700 6750 4850
 Wire Wire Line
 	7450 4850 7100 4850
-Wire Wire Line
-	6850 4200 6850 4300
-Connection ~ 6850 4200
-Wire Wire Line
-	6850 4700 6850 4850
 Connection ~ 6100 3700
-Wire Wire Line
-	7700 1800 7700 1550
 Wire Wire Line
 	5100 1000 5450 1000
 Wire Wire Line
@@ -7827,148 +8174,276 @@ Wire Wire Line
 	5450 3000 6950 3000
 Wire Wire Line
 	5450 3000 5450 2050
-$Comp
-L C C?
-U 1 1 55BCD3D7
-P 5100 2200
-F 0 "C?" V 4950 2150 40  0000 L CNN
-F 1 "4.7u" V 5250 2150 40  0000 L CNN
-F 2 "" H 5138 2050 30  0000 C CNN
-F 3 "" H 5100 2200 60  0000 C CNN
-	1    5100 2200
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5300 2200 5450 2200
 Connection ~ 5450 2200
-$Comp
-L GND #PWR?
-U 1 1 55BCD4C0
-P 4750 2250
-F 0 "#PWR?" H 4750 2250 30  0001 C CNN
-F 1 "GND" H 4750 2180 30  0001 C CNN
-F 2 "" H 4750 2250 60  0000 C CNN
-F 3 "" H 4750 2250 60  0000 C CNN
-	1    4750 2250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 2250 4750 2200
 Wire Wire Line
 	4750 2200 4900 2200
-Text HLabel 5450 2050 0    60   Input ~ 0
-Vcc
-Text Notes 5700 4200 0    40   ~ 0
-Max BAT-VSS = 36V/25V\nso R must be quite high \n1M
-Text Label 6600 3400 0    60   ~ 0
-VC5X
 Wire Wire Line
 	6600 3200 6600 3400
 Connection ~ 6600 3200
-Text Label 6550 2350 2    60   ~ 0
-VSS
-$Sheet
-S 9150 700  1950 750 
-U 55BD394E
-F0 "Battery ballancing and mesurment" 60
-F1 "Batt_ball.sch" 60
-$EndSheet
-Text Label 4300 5600 2    60   ~ 0
-VSS
-Text Label 4300 6400 2    60   ~ 0
-VC10X
-Text Label 4300 6000 2    60   ~ 0
-VC5X
 Wire Wire Line
-	4300 5600 5000 5600
+	4300 6000 5350 6000
 Wire Wire Line
-	4300 6000 5000 6000
-Wire Wire Line
-	4300 6400 5000 6400
-$Comp
-L C C?
-U 1 1 55BD7EDC
-P 5000 5800
-F 0 "C?" H 5000 5900 40  0000 L CNN
-F 1 "Cf" H 5006 5715 40  0000 L CNN
-F 2 "" H 5038 5650 30  0000 C CNN
-F 3 "" H 5000 5800 60  0000 C CNN
-	1    5000 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 55BD7FD5
-P 5000 6200
-F 0 "C?" H 5000 6300 40  0000 L CNN
-F 1 "Cf" H 5006 6115 40  0000 L CNN
-F 2 "" H 5038 6050 30  0000 C CNN
-F 3 "" H 5000 6200 60  0000 C CNN
-	1    5000 6200
-	1    0    0    -1  
-$EndComp
+	4300 6400 5350 6400
 Connection ~ 5000 6000
-Wire Wire Line
-	6950 4200 6950 5050
-Wire Wire Line
-	6950 5050 6700 5050
-Text Label 6700 5050 2    60   ~ 0
-BATT
-Text Label 4250 6800 2    60   ~ 0
-BATT
-$Comp
-L C C?
-U 1 1 55BD8ED7
-P 5000 6600
-F 0 "C?" H 5000 6700 40  0000 L CNN
-F 1 "Cf" H 5006 6515 40  0000 L CNN
-F 2 "" H 5038 6450 30  0000 C CNN
-F 3 "" H 5000 6600 60  0000 C CNN
-	1    5000 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 6800 5000 6800
 Connection ~ 5000 6400
-Connection ~ 6950 4200
-Text Notes 3950 5450 0    60   ~ 0
-Capactior between termistors
 Wire Wire Line
 	6950 2900 6700 2900
 Wire Wire Line
 	6700 2900 6700 1850
 Wire Wire Line
 	6700 1850 6350 1850
-$Comp
-L C C?
-U 1 1 55BDCF5F
-P 6150 1850
-F 0 "C?" H 6150 1950 40  0000 L CNN
-F 1 "C" H 6156 1765 40  0000 L CNN
-F 2 "" H 6188 1700 30  0000 C CNN
-F 3 "" H 6150 1850 60  0000 C CNN
-	1    6150 1850
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 55BDD023
-P 5700 1950
-F 0 "#PWR?" H 5700 1950 30  0001 C CNN
-F 1 "GND" H 5700 1880 30  0001 C CNN
-F 2 "" H 5700 1950 60  0000 C CNN
-F 3 "" H 5700 1950 60  0000 C CNN
-	1    5700 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 1950 5700 1850
 Wire Wire Line
 	5700 1850 5950 1850
-$Sheet
-S 10200 4600 500  150 
-U 55BDFAF2
-F0 "Battery" 60
-F1 "Batt_ball_cap.sch" 60
-$EndSheet
+Wire Wire Line
+	6350 4200 6950 4200
+Wire Wire Line
+	6500 4200 6500 4850
+Wire Wire Line
+	6500 4850 6300 4850
+Connection ~ 6500 4200
+Wire Wire Line
+	4250 6800 5000 6800
+Wire Wire Line
+	4300 5600 5000 5600
+Wire Wire Line
+	9550 4100 8450 4100
+Wire Wire Line
+	9550 3850 9500 3850
+Wire Wire Line
+	9500 3850 9500 4100
+Connection ~ 9500 4100
+Wire Wire Line
+	10300 3850 10500 3850
+Wire Wire Line
+	10500 3850 10500 4100
+Wire Wire Line
+	10500 4100 10300 4100
+Wire Wire Line
+	9550 3750 9450 3750
+Wire Wire Line
+	9450 3500 9450 4000
+Wire Wire Line
+	9450 4000 8450 4000
+Wire Wire Line
+	9550 3500 9450 3500
+Connection ~ 9450 3750
+Wire Wire Line
+	9550 3400 9350 3400
+Wire Wire Line
+	9350 3400 9350 3900
+Wire Wire Line
+	9350 3900 8450 3900
+Wire Wire Line
+	10300 3500 10500 3500
+Wire Wire Line
+	10500 3500 10500 3750
+Wire Wire Line
+	10500 3750 10300 3750
+Wire Wire Line
+	9550 3150 9450 3150
+Wire Wire Line
+	9450 3150 9450 3400
+Connection ~ 9450 3400
+Wire Wire Line
+	10300 3150 10500 3150
+Wire Wire Line
+	10500 3150 10500 3400
+Wire Wire Line
+	10500 3400 10300 3400
+Wire Wire Line
+	10300 2700 10700 2700
+Wire Wire Line
+	10300 2800 11200 2800
+Wire Wire Line
+	10300 2600 10650 2600
+Wire Wire Line
+	10650 2600 10650 2450
+Wire Wire Line
+	11050 2450 11200 2450
+Connection ~ 11200 2700
+Wire Wire Line
+	11200 2700 11400 2700
+Wire Wire Line
+	11200 2450 11200 2800
+Wire Wire Line
+	10300 2250 10500 2250
+Wire Wire Line
+	10500 2250 10500 2500
+Wire Wire Line
+	10500 2500 10300 2500
+Wire Wire Line
+	9550 2250 9450 2250
+Wire Wire Line
+	9450 2250 9450 2500
+Connection ~ 9450 2500
+Wire Wire Line
+	10300 4200 10500 4200
+Wire Wire Line
+	10500 4200 10500 4450
+Wire Wire Line
+	10500 4450 10300 4450
+Wire Wire Line
+	10600 4550 10600 4400
+Wire Wire Line
+	11000 4400 11150 4400
+Wire Wire Line
+	11150 4400 11150 4900
+Connection ~ 11150 4750
+Connection ~ 11150 4650
+Wire Wire Line
+	9550 4200 8450 4200
+Wire Wire Line
+	9550 4550 8450 4550
+Wire Wire Line
+	8450 4550 8450 4300
+Wire Wire Line
+	9550 4450 9000 4450
+Wire Wire Line
+	9000 4450 9000 4200
+Connection ~ 9000 4200
+Wire Wire Line
+	10300 4550 10600 4550
+Wire Wire Line
+	10300 4650 10650 4650
+Wire Wire Line
+	10300 4750 11150 4750
+Wire Wire Line
+	10300 3050 11200 3050
+Wire Wire Line
+	11200 3050 11200 2700
+Connection ~ 11200 2800
+Wire Wire Line
+	9550 3050 9300 3050
+Wire Wire Line
+	9300 3050 9300 3800
+Wire Wire Line
+	9300 3800 8450 3800
+Wire Wire Line
+	9550 2600 9250 2600
+Wire Wire Line
+	9250 2600 9250 3700
+Wire Wire Line
+	9250 3700 8450 3700
+Wire Wire Line
+	9550 2500 9200 2500
+Wire Wire Line
+	9200 2500 9200 3600
+Wire Wire Line
+	9200 3600 8450 3600
+Wire Wire Line
+	9550 2150 9150 2150
+Wire Wire Line
+	9150 2150 9150 3500
+Wire Wire Line
+	9150 3500 8450 3500
+Wire Wire Line
+	9550 1950 9450 1950
+Wire Wire Line
+	9450 1950 9450 2150
+Connection ~ 9450 2150
+Wire Wire Line
+	9550 1850 9100 1850
+Wire Wire Line
+	9100 1850 9100 3400
+Wire Wire Line
+	9100 3400 8450 3400
+Wire Wire Line
+	10300 1950 10500 1950
+Wire Wire Line
+	10500 1950 10500 2150
+Wire Wire Line
+	10500 2150 10300 2150
+Wire Wire Line
+	9550 1650 9450 1650
+Wire Wire Line
+	9450 1650 9450 1850
+Connection ~ 9450 1850
+Wire Wire Line
+	10300 1650 10500 1650
+Wire Wire Line
+	10500 1650 10500 1850
+Wire Wire Line
+	10500 1850 10300 1850
+Wire Wire Line
+	8450 3300 9050 3300
+Wire Wire Line
+	9050 3300 9050 1550
+Wire Wire Line
+	9050 1550 9550 1550
+Wire Wire Line
+	9550 1350 9450 1350
+Wire Wire Line
+	9450 1350 9450 1550
+Connection ~ 9450 1550
+Wire Wire Line
+	9550 1250 9000 1250
+Wire Wire Line
+	9000 1250 9000 3200
+Wire Wire Line
+	9000 3200 8450 3200
+Wire Wire Line
+	9600 5150 8600 5150
+Wire Wire Line
+	8600 5150 8600 5050
+Wire Wire Line
+	8600 4650 8600 3800
+Connection ~ 8600 3800
+Wire Wire Line
+	8850 5050 8850 5150
+Connection ~ 8850 5150
+Wire Wire Line
+	9100 5050 9100 5150
+Connection ~ 9100 5150
+Wire Wire Line
+	9350 5050 9350 5150
+Connection ~ 9350 5150
+Wire Wire Line
+	8850 3700 8850 4650
+Connection ~ 8850 3700
+Wire Wire Line
+	9100 4650 8950 4650
+Wire Wire Line
+	8950 4650 8950 3600
+Wire Wire Line
+	9350 4650 9350 4350
+Connection ~ 8950 3600
+Wire Wire Line
+	8850 5550 8750 5550
+Wire Wire Line
+	8750 5550 8750 3400
+Connection ~ 8750 3400
+Wire Wire Line
+	9100 5550 8900 5550
+Wire Wire Line
+	8900 5550 8900 3300
+Connection ~ 8900 3300
+Wire Wire Line
+	9350 5550 9350 5600
+Wire Wire Line
+	9350 5600 8650 5600
+Wire Wire Line
+	8650 5600 8650 3200
+Connection ~ 8650 3200
+Wire Wire Line
+	9350 4350 9050 4350
+Wire Wire Line
+	9050 4350 9050 3500
+Connection ~ 9050 3500
+Wire Wire Line
+	7700 1800 7700 1700
+Wire Wire Line
+	6950 3300 6850 3300
+Wire Wire Line
+	6850 3300 6850 3600
+Wire Wire Line
+	6850 3600 6950 3600
+Wire Wire Line
+	6950 3400 6850 3400
+Connection ~ 6850 3400
 $EndSCHEMATC
