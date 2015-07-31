@@ -5,6 +5,7 @@ Putl BQ7** in schenatic lib and all other comp thats missing
 Add all missing comp to pcb new pretty lib
 
 Chose what MCU we are going to use (must have CAN interface and presumably one other like SMBus or I2C or maybe 1W for communication with ECU) also it should hold control of two bq7* (they are the same sheet)`   
+Some possible MCU-s stm32f4(maybe to much but we have some basic code for CAN etc.), some TI ARM cortec m4, DSC from maxim
 
 After picking MCU make basic code for communication with BQ(look datasheet for exp.) 
 
