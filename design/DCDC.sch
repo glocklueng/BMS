@@ -1,4 +1,7 @@
 EESchema Schematic File Version 2
+LIBS:iso5500
+LIBS:crf_1
+LIBS:BQ76940
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,6 +31,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:BMS-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
