@@ -17,6 +17,8 @@ Because batterys would be on two sides a separate BMS board with two separated(b
 
 IN this document ECU is a RaspPI and its only purpose is monitor and general control
 
+Determinater values of R and C in scheme (please write how you did it so others can check)
+
 
 #########################################################################################################################
 # Done stuff(just for record) - you can place in other file if you want

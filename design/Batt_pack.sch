@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 37 68
+Sheet 5 68
 Title "Battery Pack"
 Date ""
 Rev ""
@@ -50,6 +50,8 @@ $Comp
 L DIODE D?
 U 1 1 55BCE59F
 P 6200 1300
+AR Path="/55BB8FBC/3A5B5476/55BCE59F" Ref="D?"  Part="1" 
+AR Path="/3A58CB36/55BCE59F" Ref="D?"  Part="1" 
 F 0 "D?" H 6200 1400 40  0000 C CNN
 F 1 "DIODE" H 6200 1200 40  0000 C CNN
 F 2 "" H 6200 1300 60  0000 C CNN
@@ -123,6 +125,8 @@ $Comp
 L R R
 U 1 1 3A50FF92
 P 6550 4400
+AR Path="/55BB8FBC/3A5B5476/3A50FF92" Ref="R"  Part="1" 
+AR Path="/3A58CB36/3A50FF92" Ref="R"  Part="1" 
 F 0 "R" V 6630 4400 40  0000 C CNN
 F 1 "Rf 1M" V 6557 4401 40  0000 C CNN
 F 2 "" V 6480 4400 30  0000 C CNN
@@ -134,6 +138,8 @@ $Comp
 L C Cc5
 U 1 1 3A513D90
 P 6450 4150
+AR Path="/55BB8FBC/3A5B5476/3A513D90" Ref="Cc5"  Part="1" 
+AR Path="/3A58CB36/3A513D90" Ref="Cc5"  Part="1" 
 F 0 "Cc5" H 6450 4250 40  0000 L CNN
 F 1 "C" H 6456 4065 40  0000 L CNN
 F 2 "" H 6488 4000 30  0000 C CNN
@@ -145,6 +151,8 @@ $Comp
 L R R?
 U 1 1 3A5210D8
 P 6500 6100
+AR Path="/55BB8FBC/3A5B5476/3A5210D8" Ref="R?"  Part="1" 
+AR Path="/3A58CB36/3A5210D8" Ref="R?"  Part="1" 
 F 0 "R?" V 6580 6100 40  0000 C CNN
 F 1 "Rf 1M" V 6507 6101 40  0000 C CNN
 F 2 "" V 6430 6100 30  0000 C CNN
@@ -156,6 +164,8 @@ $Comp
 L C Cc?
 U 1 1 3A5210DE
 P 6400 5850
+AR Path="/55BB8FBC/3A5B5476/3A5210DE" Ref="Cc?"  Part="1" 
+AR Path="/3A58CB36/3A5210DE" Ref="Cc?"  Part="1" 
 F 0 "Cc?" H 6400 5950 40  0000 L CNN
 F 1 "C" H 6406 5765 40  0000 L CNN
 F 2 "" H 6438 5700 30  0000 C CNN
@@ -233,6 +243,8 @@ $Comp
 L R R?
 U 1 1 3A53561F
 P 6550 2700
+AR Path="/55BB8FBC/3A5B5476/3A53561F" Ref="R?"  Part="1" 
+AR Path="/3A58CB36/3A53561F" Ref="R?"  Part="1" 
 F 0 "R?" V 6630 2700 40  0000 C CNN
 F 1 "Rf 1M" V 6557 2701 40  0000 C CNN
 F 2 "" V 6480 2700 30  0000 C CNN
@@ -244,6 +256,8 @@ $Comp
 L C Cc?
 U 1 1 3A535626
 P 6450 2450
+AR Path="/55BB8FBC/3A5B5476/3A535626" Ref="Cc?"  Part="1" 
+AR Path="/3A58CB36/3A535626" Ref="Cc?"  Part="1" 
 F 0 "Cc?" H 6450 2550 40  0000 L CNN
 F 1 "C" H 6456 2365 40  0000 L CNN
 F 2 "" H 6488 2300 30  0000 C CNN
@@ -550,4 +564,6 @@ Text HLabel 4100 1300 0    60   Input ~ 0
 VC15
 Text HLabel 6550 1300 2    60   Input ~ 0
 BATT
+Text Notes 4150 950  0    60   ~ 0
+Mess bellow. Batt_ball circuit are sharing every pin expect last and first\nSo becase they are sharing pin they are sharing a Rin so only\nlast should have it.(IN every block).
 $EndSCHEMATC

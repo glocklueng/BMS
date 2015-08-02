@@ -36,11 +36,11 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 10
+Sheet 2 68
 Title ""
 Date ""
 Rev ""
-Comp ""
+Comp "FESB"
 Comment1 ""
 Comment2 ""
 Comment3 ""
