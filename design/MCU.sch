@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 68
+Sheet 2 101
 Title ""
 Date ""
 Rev ""
@@ -46,4 +46,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Notes 2900 1600 0    59   ~ 0
+Pick any MCU you whant and make schematic or him and strat codeing
 $EndSCHEMATC

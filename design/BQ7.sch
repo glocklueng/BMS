@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 68
+Sheet 3 101
 Title "BQ76940"
 Date ""
 Rev ""
@@ -50,7 +50,7 @@ Text Notes 650  850  0    60   ~ 0
 Bq7*** circuit its basicly disconnetced from other stuff looking a\n voltage of every cell and if needed discharging them.(balancing)\nControled by a MCU two of them because we have 30 batterys.
 $Bitmap
 Pos 2300 3300
-Scale 1.000000
+Scale 1,000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 04 1B 00 00 02 70 08 02 00 00 00 47 C3 FE 
 30 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C EC DD 77 40 13 E7 
@@ -2906,12 +2906,12 @@ DA BB 24 68 56 F5 04 ED A2 0E F4 F4 F4 52 52 52 B8 5C 2E 8C 7D 52 5B 21 21 21 F5
 00 00 00 B4 1D 0B E6 2C 02 00 00 00 00 00 00 5A 85 C5 62 75 76 11 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 28 F5 FF 00 A1 2A 35 C4 84 81 83 FF 00 00 00 00 49 45 4E 44 AE 
-42 60 82 00 
+42 60 82 04 
 EndData
 $EndBitmap
 $Bitmap
 Pos 2250 6000
-Scale 1.500000
+Scale 1,500000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 91 00 00 02 8E 08 02 00 00 00 71 C9 D5 
 D2 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C EC DD 7B 3C 54 F9 
@@ -6277,14 +6277,14 @@ AC AC 5C BE 7C 79 5F 5F 1F 7C 43 F5 FC F9 F3 3C 1E EF EC D9 B3 83 0F 84 20 23 48
 F7 01 0E 87 1B EB 22 BC 6F 50 95 22 E3 19 8A D9 08 32 21 0D 0C 0C B0 58 AC BF 1D E3 86 BC 15 3E 
 9F DF D1 D1 31 D6 A5 40 90 E1 4D 94 96 C0 77 F7 E1 9C E9 BB 40 B5 84 6A 00 41 90 F1 06 B5 8D 23 
 08 82 20 C8 04 83 62 36 82 20 08 82 4C 0C 38 D4 12 88 20 08 82 20 E3 1C 1A 1D 89 20 08 82 20 08 
-82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 A5 
+82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
 EndData
 $EndBitmap
 Text Notes 650  2200 0    60   ~ 0
 Pin configuration\n
 $Bitmap
 Pos 5300 7250
-Scale 0.800000
+Scale 0,000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 04 20 00 00 01 13 08 02 00 00 00 68 58 E0 
 96 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C EC DD 67 40 14 C7 
@@ -7303,23 +7303,23 @@ $EndSheet
 $Comp
 L R R?
 U 1 1 558476E6
-P 7300 1550
-F 0 "R?" V 7380 1550 40  0000 C CNN
-F 1 "1M" V 7307 1551 40  0000 C CNN
-F 2 "" V 7230 1550 30  0000 C CNN
-F 3 "" H 7300 1550 30  0000 C CNN
-	1    7300 1550
+P 7700 1300
+F 0 "R?" V 7780 1300 40  0000 C CNN
+F 1 "5M" V 7707 1301 40  0000 C CNN
+F 2 "" V 7630 1300 30  0000 C CNN
+F 3 "" H 7700 1300 30  0000 C CNN
+	1    7700 1300
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR05
 U 1 1 5584794D
-P 7300 1200
-F 0 "#PWR05" H 7300 1200 30  0001 C CNN
-F 1 "GND" H 7300 1130 30  0001 C CNN
-F 2 "" H 7300 1200 60  0000 C CNN
-F 3 "" H 7300 1200 60  0000 C CNN
-	1    7300 1200
+P 7700 950
+F 0 "#PWR05" H 7700 950 30  0001 C CNN
+F 1 "GND" H 7700 880 30  0001 C CNN
+F 2 "" H 7700 950 60  0000 C CNN
+F 3 "" H 7700 950 60  0000 C CNN
+	1    7700 950 
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -7417,7 +7417,7 @@ L SHUNT R?
 U 1 1 55BCAC64
 P 6800 6250
 F 0 "R?" V 6880 6250 50  0000 C CNN
-F 1 "SHUNT" V 6800 6250 50  0000 C CNN
+F 1 "SHUNT 10K" V 6800 6250 50  0000 C CNN
 F 2 "" H 6800 6250 60  0000 C CNN
 F 3 "" H 6800 6250 60  0000 C CNN
 	1    6800 6250
@@ -7428,7 +7428,7 @@ L R R?
 U 1 1 55BCBD82
 P 6600 5650
 F 0 "R?" V 6680 5650 40  0000 C CNN
-F 1 "100" V 6607 5651 40  0000 C CNN
+F 1 "1K" V 6607 5651 40  0000 C CNN
 F 2 "" V 6530 5650 30  0000 C CNN
 F 3 "" H 6600 5650 30  0000 C CNN
 	1    6600 5650
@@ -7439,7 +7439,7 @@ L R R?
 U 1 1 55BCBF7F
 P 7000 5650
 F 0 "R?" V 7080 5650 40  0000 C CNN
-F 1 "100" V 7007 5651 40  0000 C CNN
+F 1 "1K" V 7007 5651 40  0000 C CNN
 F 2 "" V 6930 5650 30  0000 C CNN
 F 3 "" H 7000 5650 30  0000 C CNN
 	1    7000 5650
@@ -7528,7 +7528,7 @@ F 3 "" H 6100 4200 30  0000 C CNN
 $EndComp
 Text Notes 4900 5800 2    30   Italic 0
 Should be high value\n
-Text Label 5900 3700 2    50   Italic 0
+Text Label 5800 3600 2    50   Italic 0
 VC10X
 $Comp
 L R R?
@@ -7634,24 +7634,24 @@ VC10X
 $Comp
 L C C?
 U 1 1 55BD1C55
-P 6950 1800
-F 0 "C?" H 6950 1900 40  0000 L CNN
-F 1 "C" H 6956 1715 40  0000 L CNN
-F 2 "" H 6988 1650 30  0000 C CNN
-F 3 "" H 6950 1800 60  0000 C CNN
-	1    6950 1800
-	-1   0    0    1   
+P 7050 1300
+F 0 "C?" H 7050 1400 40  0000 L CNN
+F 1 "4,7" H 7056 1215 40  0000 L CNN
+F 2 "" H 7088 1150 30  0000 C CNN
+F 3 "" H 7050 1300 60  0000 C CNN
+	1    7050 1300
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR013
 U 1 1 55BD1E3F
-P 6950 2100
-F 0 "#PWR013" H 6950 2100 30  0001 C CNN
-F 1 "GND" H 6950 2030 30  0001 C CNN
-F 2 "" H 6950 2100 60  0000 C CNN
-F 3 "" H 6950 2100 60  0000 C CNN
-	1    6950 2100
-	1    0    0    -1  
+P 7050 1000
+F 0 "#PWR013" H 7050 1000 30  0001 C CNN
+F 1 "GND" H 7050 930 30  0001 C CNN
+F 2 "" H 7050 1000 60  0000 C CNN
+F 3 "" H 7050 1000 60  0000 C CNN
+	1    7050 1000
+	-1   0    0    1   
 $EndComp
 Text GLabel 4350 1000 0    60   Input ~ 0
 +BATT
@@ -7664,7 +7664,7 @@ L C C?
 U 1 1 55BCD3D7
 P 5100 2200
 F 0 "C?" V 4950 2150 40  0000 L CNN
-F 1 "4.7u" V 5250 2150 40  0000 L CNN
+F 1 "12u" V 5250 2150 40  0000 L CNN
 F 2 "" H 5138 2050 30  0000 C CNN
 F 3 "" H 5100 2200 60  0000 C CNN
 	1    5100 2200
@@ -7700,7 +7700,7 @@ L C C?
 U 1 1 55BD7EDC
 P 5000 5800
 F 0 "C?" H 5000 5900 40  0000 L CNN
-F 1 "Cf" H 5006 5715 40  0000 L CNN
+F 1 "Cf 40u" H 5006 5715 40  0000 L CNN
 F 2 "" H 5038 5650 30  0000 C CNN
 F 3 "" H 5000 5800 60  0000 C CNN
 	1    5000 5800
@@ -7711,7 +7711,7 @@ L C C?
 U 1 1 55BD7FD5
 P 5000 6200
 F 0 "C?" H 5000 6300 40  0000 L CNN
-F 1 "Cf" H 5006 6115 40  0000 L CNN
+F 1 "Cf 40u" H 5006 6115 40  0000 L CNN
 F 2 "" H 5038 6050 30  0000 C CNN
 F 3 "" H 5000 6200 60  0000 C CNN
 	1    5000 6200
@@ -7726,7 +7726,7 @@ L C C?
 U 1 1 55BD8ED7
 P 5000 6600
 F 0 "C?" H 5000 6700 40  0000 L CNN
-F 1 "Cf" H 5006 6515 40  0000 L CNN
+F 1 "Cf 40u" H 5006 6515 40  0000 L CNN
 F 2 "" H 5038 6450 30  0000 C CNN
 F 3 "" H 5000 6600 60  0000 C CNN
 	1    5000 6600
@@ -7739,7 +7739,7 @@ L C C?
 U 1 1 55BDCF5F
 P 6150 1850
 F 0 "C?" H 6150 1950 40  0000 L CNN
-F 1 "C" H 6156 1765 40  0000 L CNN
+F 1 "10u" H 6156 1765 40  0000 L CNN
 F 2 "" H 6188 1700 30  0000 C CNN
 F 3 "" H 6150 1850 60  0000 C CNN
 	1    6150 1850
@@ -7851,7 +7851,7 @@ F 3 "" H 9400 5500 60  0000 C CNN
 $EndComp
 Text Notes 8600 5200 0    24   ~ 0
 Schottky diode for avoding high current on pin(We go to 50A+ so..)
-Text Notes 6050 2250 0    60   ~ 0
+Text Notes 5900 2250 0    60   ~ 0
 This is a ground so
 $Comp
 L DIODE D?
@@ -7974,6 +7974,22 @@ F 3 "" H 11050 2700 60  0000 C CNN
 	1    11050 2700
 	1    0    0    -1  
 $EndComp
+Text Label 9850 1600 0    59   ~ 0
+VC10X
+Text Notes 6000 6100 0    20   ~ 0
+We are going to use 30 cell this is 15 so it's a half here it's a reason for this wierd BATT labels
+Text Notes 9150 5500 0    0    ~ 0
+And overvoltage. They value must be very close to max batt voltage
+Text Notes 8500 5700 0    28   ~ 0
+And overvoltage. value must be very close to max batt voltage.
+Text Notes 6200 5750 0    28   ~ 0
+Maybe to high value VSS and SRP will have to much  voltage diff.\n
+Text Notes 800  1450 0    59   ~ 0
+Be caerfull with VSS and other pins beacuse we must maintaine \na specific max voltage diff  between pins.\n
+Text Notes 6900 2350 0    28   ~ 0
+DSG CHG circuit TODO
+Text Notes 5600 2000 0    28   ~ 0
+VSS basicly\n
 Wire Wire Line
 	6450 2500 6450 2900
 Wire Wire Line
@@ -8001,9 +8017,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 3400 6100 3700
 Wire Wire Line
-	5900 3700 6950 3700
-Wire Wire Line
-	7300 1300 7300 1200
+	7700 1050 7700 950 
 Wire Wire Line
 	5300 2800 6950 2800
 Connection ~ 5700 2800
@@ -8019,10 +8033,6 @@ Wire Wire Line
 	7000 5950 7000 5900
 Wire Wire Line
 	7000 5150 7000 5400
-Wire Wire Line
-	6600 5400 6600 5300
-Wire Wire Line
-	6650 4700 6650 5300
 Wire Wire Line
 	7000 5300 7400 5300
 Connection ~ 7000 5300
@@ -8081,10 +8091,6 @@ Wire Wire Line
 	5150 1550 5000 1550
 Wire Wire Line
 	6650 3100 6950 3100
-Wire Wire Line
-	6650 1600 6950 1600
-Wire Wire Line
-	6950 2000 6950 2100
 Wire Wire Line
 	4350 1000 4600 1000
 Wire Wire Line
@@ -8147,7 +8153,7 @@ Connection ~ 9400 5300
 Wire Wire Line
 	6950 3300 6850 3300
 Wire Wire Line
-	6850 3300 6850 3600
+	6850 3300 6850 4400
 Wire Wire Line
 	6850 3600 6950 3600
 Wire Wire Line
@@ -8159,8 +8165,6 @@ Wire Wire Line
 	6000 4500 6500 4500
 Wire Wire Line
 	6500 4500 6500 4200
-Wire Wire Line
-	6650 4700 7500 4700
 Wire Wire Line
 	9550 1600 9550 1700
 Wire Wire Line
@@ -8178,11 +8182,7 @@ Wire Wire Line
 	6800 3800 6800 4100
 Wire Wire Line
 	6800 4100 6950 4100
-Wire Wire Line
-	6950 3900 6800 3900
 Connection ~ 6800 3900
-Wire Wire Line
-	7300 1800 7700 1800
 Wire Wire Line
 	8650 5300 8650 5200
 Wire Wire Line
@@ -8260,8 +8260,6 @@ Wire Wire Line
 Wire Wire Line
 	9300 5700 9300 3200
 Connection ~ 9300 3200
-Text Label 9850 1600 0    59   ~ 0
-VC10X
 Connection ~ 9550 1600
 Wire Wire Line
 	8800 1600 9850 1600
@@ -8292,6 +8290,55 @@ Wire Wire Line
 Wire Wire Line
 	9400 1200 9400 2600
 Connection ~ 9400 2600
-Text Notes 6000 6100 0    20   ~ 0
-We are going to use 30 cell this is 15 so it's a half here it's a reason for this wierd BATT labels
+Wire Wire Line
+	7700 1800 7700 1550
+Wire Wire Line
+	7050 1000 7050 1100
+Wire Wire Line
+	6650 1600 7050 1600
+Wire Wire Line
+	7050 1600 7050 1500
+Wire Wire Line
+	5800 3700 5800 3600
+Connection ~ 5800 3700
+Wire Wire Line
+	5500 3700 6950 3700
+Wire Wire Line
+	5100 3700 5100 3900
+Wire Wire Line
+	5100 3900 6950 3900
+$Comp
+L C C?
+U 1 1 55C2CE23
+P 5300 3700
+F 0 "C?" H 5300 3800 40  0000 L CNN
+F 1 "10u" H 5306 3615 40  0000 L CNN
+F 2 "" H 5338 3550 30  0000 C CNN
+F 3 "" H 5300 3700 60  0000 C CNN
+	1    5300 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 5050 6600 5050
+Wire Wire Line
+	6600 5050 6600 5400
+Wire Wire Line
+	7500 5050 7500 4700
+Connection ~ 6850 3600
+$Comp
+L C C?
+U 1 1 55C32FBA
+P 6850 4600
+F 0 "C?" H 6850 4700 40  0000 L CNN
+F 1 "10u" H 6856 4515 40  0000 L CNN
+F 2 "" H 6888 4450 30  0000 C CNN
+F 3 "" H 6850 4600 60  0000 C CNN
+	1    6850 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 4800 6700 4800
+Wire Wire Line
+	6700 4800 6700 3200
+Connection ~ 6700 3200
 $EndSCHEMATC

@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 68
+Sheet 37 101
 Title ""
 Date ""
 Rev ""
@@ -88,6 +88,8 @@ F 3 "" H 5500 3450 60  0000 C CNN
 F 4 "3.7V" H 5500 3450 60  0001 C CNN "Voltage"
 F 5 "2200mAh" H 5500 3450 60  0001 C CNN "Capacity"
 F 6 "150A" H 5500 3450 60  0001 C CNN "Max_out_current"
+F 7 "4,1" H 5500 3450 60  0001 C CNN "Max_voltage"
+F 8 "2,8" H 5500 3450 60  0001 C CNN "Min_volltage"
 	1    5500 3450
 	1    0    0    -1  
 $EndComp
