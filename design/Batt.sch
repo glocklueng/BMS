@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 37 101
+Sheet 36 101
 Title ""
 Date ""
 Rev ""
@@ -103,4 +103,6 @@ Wire Wire Line
 	5000 3450 5200 3450
 Wire Wire Line
 	5800 3450 5950 3450
+Text Notes 2600 1300 0    60   ~ 0
+Put anything about possible battery in this sheet as component \ndescription or should I say new field.\n
 $EndSCHEMATC

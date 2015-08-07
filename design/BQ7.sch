@@ -50,7 +50,7 @@ Text Notes 650  850  0    60   ~ 0
 Bq7*** circuit its basicly disconnetced from other stuff looking a\n voltage of every cell and if needed discharging them.(balancing)\nControled by a MCU two of them because we have 30 batterys.
 $Bitmap
 Pos 2300 3300
-Scale 1,000000
+Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 04 1B 00 00 02 70 08 02 00 00 00 47 C3 FE 
 30 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C EC DD 77 40 13 E7 
@@ -2906,12 +2906,12 @@ DA BB 24 68 56 F5 04 ED A2 0E F4 F4 F4 52 52 52 B8 5C 2E 8C 7D 52 5B 21 21 21 F5
 00 00 00 B4 1D 0B E6 2C 02 00 00 00 00 00 00 5A 85 C5 62 75 76 11 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 28 F5 FF 00 A1 2A 35 C4 84 81 83 FF 00 00 00 00 49 45 4E 44 AE 
-42 60 82 04 
+42 60 82 00 
 EndData
 $EndBitmap
 $Bitmap
 Pos 2250 6000
-Scale 1,500000
+Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 91 00 00 02 8E 08 02 00 00 00 71 C9 D5 
 D2 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C EC DD 7B 3C 54 F9 
@@ -6277,14 +6277,14 @@ AC AC 5C BE 7C 79 5F 5F 1F 7C 43 F5 FC F9 F3 3C 1E EF EC D9 B3 83 0F 84 20 23 48
 F7 01 0E 87 1B EB 22 BC 6F 50 95 22 E3 19 8A D9 08 32 21 0D 0C 0C B0 58 AC BF 1D E3 86 BC 15 3E 
 9F DF D1 D1 31 D6 A5 40 90 E1 4D 94 96 C0 77 F7 E1 9C E9 BB 40 B5 84 6A 00 41 90 F1 06 B5 8D 23 
 08 82 20 C8 04 83 62 36 82 20 08 82 4C 0C 38 D4 12 88 20 08 82 20 E3 1C 1A 1D 89 20 08 82 20 08 
-82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 00 
+82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 A6 
 EndData
 $EndBitmap
 Text Notes 650  2200 0    60   ~ 0
 Pin configuration\n
 $Bitmap
 Pos 5300 7250
-Scale 0,000000
+Scale 0.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 04 20 00 00 01 13 08 02 00 00 00 68 58 E0 
 96 00 00 00 03 73 42 49 54 08 08 08 DB E1 4F E0 00 00 20 00 49 44 41 54 78 9C EC DD 67 40 14 C7 
@@ -7289,16 +7289,16 @@ $EndBitmap
 Text Notes 4750 7500 0    60   ~ 0
 Dont forget this when programming
 $Sheet
-S 4150 2700 1150 800 
+S 4200 2350 650  1500
 U 55844E2F
 F0 "NTC Temp monitor" 60
 F1 "Temp.sch" 60
-F2 "Temp1_in" I R 5300 2800 60 
-F3 "Temp2_in" I R 5300 3050 60 
-F4 "Temp3_in" I R 5300 3300 60 
-F5 "Temp1_out" O R 5300 2900 60 
-F6 "Temp2_out" O R 5300 3150 60 
-F7 "Temp3_out" O R 5300 3400 60 
+F2 "Temp1_in" I R 4850 2500 60 
+F3 "Temp2_in" I R 4850 3050 60 
+F4 "Temp3_in" I R 4850 3800 60 
+F5 "Temp1_out" O R 4850 2400 60 
+F6 "Temp2_out" O R 4850 2950 60 
+F7 "Temp3_out" O R 4850 3700 60 
 $EndSheet
 $Comp
 L R R?
@@ -7325,68 +7325,68 @@ $EndComp
 $Comp
 L R R?
 U 1 1 558480EE
-P 5700 2450
-F 0 "R?" V 5780 2450 40  0000 C CNN
-F 1 "50k" V 5707 2451 40  0000 C CNN
-F 2 "" V 5630 2450 30  0000 C CNN
-F 3 "" H 5700 2450 30  0000 C CNN
-	1    5700 2450
+P 5300 2050
+F 0 "R?" V 5380 2050 40  0000 C CNN
+F 1 "50k" V 5307 2051 40  0000 C CNN
+F 2 "" V 5230 2050 30  0000 C CNN
+F 3 "" H 5300 2050 30  0000 C CNN
+	1    5300 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 55848215
-P 5950 2450
-F 0 "R?" V 6030 2450 40  0000 C CNN
-F 1 "50k" V 5957 2451 40  0000 C CNN
-F 2 "" V 5880 2450 30  0000 C CNN
-F 3 "" H 5950 2450 30  0000 C CNN
-	1    5950 2450
+P 5100 2050
+F 0 "R?" V 5180 2050 40  0000 C CNN
+F 1 "50k" V 5107 2051 40  0000 C CNN
+F 2 "" V 5030 2050 30  0000 C CNN
+F 3 "" H 5100 2050 30  0000 C CNN
+	1    5100 2050
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 5584841E
-P 6200 2450
-F 0 "R?" V 6280 2450 40  0000 C CNN
-F 1 "50k" V 6207 2451 40  0000 C CNN
-F 2 "" V 6130 2450 30  0000 C CNN
-F 3 "" H 6200 2450 30  0000 C CNN
-	1    6200 2450
-	1    0    0    -1  
+P 4750 4050
+F 0 "R?" V 4830 4050 40  0000 C CNN
+F 1 "50k" V 4757 4051 40  0000 C CNN
+F 2 "" V 4680 4050 30  0000 C CNN
+F 3 "" H 4750 4050 30  0000 C CNN
+	1    4750 4050
+	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR06
 U 1 1 55848488
-P 5700 2200
-F 0 "#PWR06" H 5700 2200 30  0001 C CNN
-F 1 "GND" H 5700 2130 30  0001 C CNN
-F 2 "" H 5700 2200 60  0000 C CNN
-F 3 "" H 5700 2200 60  0000 C CNN
-	1    5700 2200
+P 5300 1800
+F 0 "#PWR06" H 5300 1800 30  0001 C CNN
+F 1 "GND" H 5300 1730 30  0001 C CNN
+F 2 "" H 5300 1800 60  0000 C CNN
+F 3 "" H 5300 1800 60  0000 C CNN
+	1    5300 1800
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR07
 U 1 1 5584850F
-P 5950 2200
-F 0 "#PWR07" H 5950 2200 30  0001 C CNN
-F 1 "GND" H 5950 2130 30  0001 C CNN
-F 2 "" H 5950 2200 60  0000 C CNN
-F 3 "" H 5950 2200 60  0000 C CNN
-	1    5950 2200
+P 5100 1800
+F 0 "#PWR07" H 5100 1800 30  0001 C CNN
+F 1 "GND" H 5100 1730 30  0001 C CNN
+F 2 "" H 5100 1800 60  0000 C CNN
+F 3 "" H 5100 1800 60  0000 C CNN
+	1    5100 1800
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR08
 U 1 1 558485AD
-P 6200 2200
-F 0 "#PWR08" H 6200 2200 30  0001 C CNN
-F 1 "GND" H 6200 2130 30  0001 C CNN
-F 2 "" H 6200 2200 60  0000 C CNN
-F 3 "" H 6200 2200 60  0000 C CNN
-	1    6200 2200
-	-1   0    0    1   
+P 4500 4050
+F 0 "#PWR08" H 4500 4050 30  0001 C CNN
+F 1 "GND" H 4500 3980 30  0001 C CNN
+F 2 "" H 4500 4050 60  0000 C CNN
+F 3 "" H 4500 4050 60  0000 C CNN
+	1    4500 4050
+	0    1    1    0   
 $EndComp
 Text GLabel 7350 6250 2    60   Input ~ 0
 +BATT_out
@@ -7505,30 +7505,30 @@ $EndComp
 $Comp
 L GND #PWR012
 U 1 1 55BCD61C
-P 6550 2650
-F 0 "#PWR012" H 6550 2650 30  0001 C CNN
-F 1 "GND" H 6550 2580 30  0001 C CNN
-F 2 "" H 6550 2650 60  0000 C CNN
-F 3 "" H 6550 2650 60  0000 C CNN
-	1    6550 2650
+P 6150 2450
+F 0 "#PWR012" H 6150 2450 30  0001 C CNN
+F 1 "GND" H 6150 2380 30  0001 C CNN
+F 2 "" H 6150 2450 60  0000 C CNN
+F 3 "" H 6150 2450 60  0000 C CNN
+	1    6150 2450
 	1    0    0    -1  
 $EndComp
-Text GLabel 5350 4200 0    60   Input Italic 0
+Text GLabel 5300 4400 0    60   Input Italic 0
 +BATT
 $Comp
 L R R?
 U 1 1 55BCE286
-P 6100 4200
-F 0 "R?" V 6180 4200 40  0000 C CNN
-F 1 "Rf 1M" V 6107 4201 40  0000 C CNN
-F 2 "" V 6030 4200 30  0000 C CNN
-F 3 "" H 6100 4200 30  0000 C CNN
-	1    6100 4200
+P 6050 4400
+F 0 "R?" V 6130 4400 40  0000 C CNN
+F 1 "Rf 1M" V 6057 4401 40  0000 C CNN
+F 2 "" V 5980 4400 30  0000 C CNN
+F 3 "" H 6050 4400 30  0000 C CNN
+	1    6050 4400
 	0    1    1    0   
 $EndComp
 Text Notes 4900 5800 2    30   Italic 0
 Should be high value\n
-Text Label 5800 3600 2    50   Italic 0
+Text Label 5600 3650 2    50   Italic 0
 VC10X
 $Comp
 L R R?
@@ -7662,32 +7662,32 @@ SDA
 $Comp
 L C C?
 U 1 1 55BCD3D7
-P 5100 2200
-F 0 "C?" V 4950 2150 40  0000 L CNN
-F 1 "12u" V 5250 2150 40  0000 L CNN
-F 2 "" H 5138 2050 30  0000 C CNN
-F 3 "" H 5100 2200 60  0000 C CNN
-	1    5100 2200
+P 5700 3100
+F 0 "C?" V 5550 3050 40  0000 L CNN
+F 1 "12u" V 5850 3050 40  0000 L CNN
+F 2 "" H 5738 2950 30  0000 C CNN
+F 3 "" H 5700 3100 60  0000 C CNN
+	1    5700 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR014
 U 1 1 55BCD4C0
-P 4750 2250
-F 0 "#PWR014" H 4750 2250 30  0001 C CNN
-F 1 "GND" H 4750 2180 30  0001 C CNN
-F 2 "" H 4750 2250 60  0000 C CNN
-F 3 "" H 4750 2250 60  0000 C CNN
-	1    4750 2250
-	1    0    0    -1  
+P 5350 3100
+F 0 "#PWR014" H 5350 3100 30  0001 C CNN
+F 1 "GND" H 5350 3030 30  0001 C CNN
+F 2 "" H 5350 3100 60  0000 C CNN
+F 3 "" H 5350 3100 60  0000 C CNN
+	1    5350 3100
+	0    1    1    0   
 $EndComp
-Text HLabel 5450 2050 0    60   Input ~ 0
+Text HLabel 5700 2950 0    60   Input ~ 0
 Vcc
-Text Notes 5700 4200 0    40   ~ 0
+Text Notes 5650 4400 0    40   ~ 0
 Max BAT-VSS = 36V/25V\nso R must be quite high \n1M
-Text Label 6600 3400 0    60   ~ 0
+Text Label 5400 3350 2    60   ~ 0
 VC5X
-Text Label 6550 2350 2    60   ~ 0
+Text Label 6150 2250 2    60   ~ 0
 VSS
 Text Label 4300 5600 2    60   ~ 0
 VSS
@@ -7717,7 +7717,7 @@ F 3 "" H 5000 6200 60  0000 C CNN
 	1    5000 6200
 	1    0    0    -1  
 $EndComp
-Text Label 6000 4500 2    60   ~ 0
+Text Label 5950 4700 2    60   ~ 0
 BATT
 Text Label 4250 6800 2    60   ~ 0
 BATT
@@ -7737,24 +7737,24 @@ Capactior between termistors
 $Comp
 L C C?
 U 1 1 55BDCF5F
-P 6150 1850
-F 0 "C?" H 6150 1950 40  0000 L CNN
-F 1 "10u" H 6156 1765 40  0000 L CNN
-F 2 "" H 6188 1700 30  0000 C CNN
-F 3 "" H 6150 1850 60  0000 C CNN
-	1    6150 1850
+P 5850 2700
+F 0 "C?" H 5850 2800 40  0000 L CNN
+F 1 "10u" H 5856 2615 40  0000 L CNN
+F 2 "" H 5888 2550 30  0000 C CNN
+F 3 "" H 5850 2700 60  0000 C CNN
+	1    5850 2700
 	0    1    1    0   
 $EndComp
 $Comp
 L GND #PWR015
 U 1 1 55BDD023
-P 5700 1950
-F 0 "#PWR015" H 5700 1950 30  0001 C CNN
-F 1 "GND" H 5700 1880 30  0001 C CNN
-F 2 "" H 5700 1950 60  0000 C CNN
-F 3 "" H 5700 1950 60  0000 C CNN
-	1    5700 1950
-	1    0    0    -1  
+P 5500 2700
+F 0 "#PWR015" H 5500 2700 30  0001 C CNN
+F 1 "GND" H 5500 2630 30  0001 C CNN
+F 2 "" H 5500 2700 60  0000 C CNN
+F 3 "" H 5500 2700 60  0000 C CNN
+	1    5500 2700
+	0    1    1    0   
 $EndComp
 Text Label 5350 6000 0    60   ~ 0
 A
@@ -7851,7 +7851,7 @@ F 3 "" H 9400 5500 60  0000 C CNN
 $EndComp
 Text Notes 8600 5200 0    24   ~ 0
 Schottky diode for avoding high current on pin(We go to 50A+ so..)
-Text Notes 5900 2250 0    60   ~ 0
+Text Notes 5600 2150 0    60   ~ 0
 This is a ground so
 $Comp
 L DIODE D?
@@ -7978,7 +7978,7 @@ Text Label 9850 1600 0    59   ~ 0
 VC10X
 Text Notes 6000 6100 0    20   ~ 0
 We are going to use 30 cell this is 15 so it's a half here it's a reason for this wierd BATT labels
-Text Notes 9150 5500 0    0    ~ 0
+Text Notes 9150 5500 0    60   ~ 0
 And overvoltage. They value must be very close to max batt voltage
 Text Notes 8500 5700 0    28   ~ 0
 And overvoltage. value must be very close to max batt voltage.
@@ -7988,41 +7988,34 @@ Text Notes 800  1450 0    59   ~ 0
 Be caerfull with VSS and other pins beacuse we must maintaine \na specific max voltage diff  between pins.\n
 Text Notes 6900 2350 0    28   ~ 0
 DSG CHG circuit TODO
-Text Notes 5600 2000 0    28   ~ 0
+Text Notes 5478 2600 3    28   ~ 0
 VSS basicly\n
-Wire Wire Line
-	6450 2500 6450 2900
-Wire Wire Line
-	6450 2900 5300 2900
-Wire Wire Line
-	6950 3500 6350 3500
-Wire Wire Line
-	6350 3500 6350 3050
-Wire Wire Line
-	6350 3050 5300 3050
-Wire Wire Line
-	5300 3150 6400 3150
-Wire Wire Line
-	6400 3150 6400 3200
-Wire Wire Line
-	6400 3200 6950 3200
-Wire Wire Line
-	6950 4000 6250 4000
-Wire Wire Line
-	6250 4000 6250 3300
-Wire Wire Line
-	6250 3300 5300 3300
-Wire Wire Line
-	5300 3400 6100 3400
-Wire Wire Line
-	6100 3400 6100 3700
+$Comp
+L C C?
+U 1 1 55C2CE23
+P 6500 3900
+F 0 "C?" H 6500 4000 40  0000 L CNN
+F 1 "10u" H 6506 3815 40  0000 L CNN
+F 2 "" H 6538 3750 30  0000 C CNN
+F 3 "" H 6500 3900 60  0000 C CNN
+	1    6500 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 55C32FBA
+P 6450 3400
+F 0 "C?" H 6450 3500 40  0000 L CNN
+F 1 "10u" H 6456 3315 40  0000 L CNN
+F 2 "" H 6488 3250 30  0000 C CNN
+F 3 "" H 6450 3400 60  0000 C CNN
+	1    6450 3400
+	0    -1   -1   0   
+$EndComp
+Text Notes 6000 5200 0    60   ~ 0
+This should have only low side preasumably\nI dont need current twice
 Wire Wire Line
 	7700 1050 7700 950 
-Wire Wire Line
-	5300 2800 6950 2800
-Connection ~ 5700 2800
-Connection ~ 5950 3050
-Connection ~ 6200 3300
 Wire Wire Line
 	6600 5900 6600 5950
 Wire Wire Line
@@ -8046,14 +8039,11 @@ Wire Wire Line
 Wire Wire Line
 	6300 6250 6300 6550
 Connection ~ 6300 6250
+Connection ~ 6150 2400
 Wire Wire Line
-	6550 2350 6550 2650
-Connection ~ 6550 2500
-Wire Wire Line
-	5850 4200 5350 4200
+	5800 4400 5300 4400
 Wire Wire Line
 	6600 5300 6250 5300
-Connection ~ 6100 3700
 Wire Wire Line
 	5100 1000 5450 1000
 Wire Wire Line
@@ -8082,59 +8072,23 @@ Wire Wire Line
 	6600 750  6600 1000
 Connection ~ 6600 1000
 Wire Wire Line
-	5950 2700 5950 3050
-Wire Wire Line
-	6200 2700 6200 3300
-Wire Wire Line
 	5650 1550 5650 1300
 Wire Wire Line
 	5150 1550 5000 1550
 Wire Wire Line
-	6650 3100 6950 3100
-Wire Wire Line
 	4350 1000 4600 1000
-Wire Wire Line
-	5700 2700 5700 2800
-Wire Wire Line
-	6450 2500 6950 2500
-Wire Wire Line
-	6650 3100 6650 1600
 Wire Wire Line
 	6750 1500 6750 1600
 Connection ~ 6750 1600
 Wire Wire Line
-	5450 3000 6950 3000
-Wire Wire Line
-	5450 2050 5450 3000
-Wire Wire Line
-	5300 2200 5450 2200
-Connection ~ 5450 2200
-Wire Wire Line
-	4750 2250 4750 2200
-Wire Wire Line
-	4750 2200 4900 2200
-Wire Wire Line
-	6600 3200 6600 3400
-Connection ~ 6600 3200
+	5900 3100 6200 3100
 Wire Wire Line
 	4300 6000 5350 6000
 Wire Wire Line
 	4300 6400 5350 6400
 Connection ~ 5000 6000
 Connection ~ 5000 6400
-Wire Wire Line
-	6950 2900 6700 2900
-Wire Wire Line
-	6700 2900 6700 1850
-Wire Wire Line
-	6700 1850 6350 1850
-Wire Wire Line
-	5700 1950 5700 1850
-Wire Wire Line
-	5700 1850 5950 1850
-Wire Wire Line
-	6350 4200 6950 4200
-Connection ~ 6500 4200
+Connection ~ 6450 4400
 Wire Wire Line
 	4250 6800 5000 6800
 Wire Wire Line
@@ -8151,24 +8105,15 @@ Wire Wire Line
 	9400 5200 9400 5300
 Connection ~ 9400 5300
 Wire Wire Line
-	6950 3300 6850 3300
-Wire Wire Line
-	6850 3300 6850 4400
-Wire Wire Line
-	6850 3600 6950 3600
-Wire Wire Line
-	6950 3400 6850 3400
-Connection ~ 6850 3400
-Wire Wire Line
 	7050 6250 7350 6250
 Wire Wire Line
-	6000 4500 6500 4500
+	6450 4700 5950 4700
 Wire Wire Line
-	6500 4500 6500 4200
+	6450 4200 6450 4700
 Wire Wire Line
 	9550 1600 9550 1700
 Wire Wire Line
-	9300 1700 9300 1600
+	9300 1600 9300 1700
 Connection ~ 9300 1600
 Wire Wire Line
 	9050 1700 9050 1600
@@ -8176,13 +8121,6 @@ Connection ~ 9050 1600
 Wire Wire Line
 	8800 1700 8800 1600
 Connection ~ 8800 1600
-Wire Wire Line
-	6950 3800 6800 3800
-Wire Wire Line
-	6800 3800 6800 4100
-Wire Wire Line
-	6800 4100 6950 4100
-Connection ~ 6800 3900
 Wire Wire Line
 	8650 5300 8650 5200
 Wire Wire Line
@@ -8200,29 +8138,29 @@ Wire Wire Line
 Wire Wire Line
 	8450 3900 9800 3900
 Wire Wire Line
-	9800 3800 8450 3800
+	8450 3800 9800 3800
 Wire Wire Line
 	8450 3700 9800 3700
 Wire Wire Line
-	9800 3600 8450 3600
+	8450 3600 9800 3600
 Wire Wire Line
 	8450 3500 9800 3500
 Wire Wire Line
-	9800 3400 8450 3400
+	8450 3400 9800 3400
 Wire Wire Line
 	8450 3300 9800 3300
 Wire Wire Line
-	9800 3200 8450 3200
+	8450 3200 9800 3200
 Wire Wire Line
-	9800 3100 8450 3100
+	8450 3100 9800 3100
 Wire Wire Line
 	8450 3000 9800 3000
 Wire Wire Line
-	9800 2900 8450 2900
+	8450 2900 9800 2900
 Wire Wire Line
 	8450 2800 9800 2800
 Wire Wire Line
-	9800 2700 8450 2700
+	8450 2700 9800 2700
 Wire Wire Line
 	8450 2600 9800 2600
 Wire Wire Line
@@ -8299,46 +8237,123 @@ Wire Wire Line
 Wire Wire Line
 	7050 1600 7050 1500
 Wire Wire Line
-	5800 3700 5800 3600
-Connection ~ 5800 3700
-Wire Wire Line
-	5500 3700 6950 3700
-Wire Wire Line
-	5100 3700 5100 3900
-Wire Wire Line
-	5100 3900 6950 3900
-$Comp
-L C C?
-U 1 1 55C2CE23
-P 5300 3700
-F 0 "C?" H 5300 3800 40  0000 L CNN
-F 1 "10u" H 5306 3615 40  0000 L CNN
-F 2 "" H 5338 3550 30  0000 C CNN
-F 3 "" H 5300 3700 60  0000 C CNN
-	1    5300 3700
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	7500 5050 6600 5050
 Wire Wire Line
 	6600 5050 6600 5400
 Wire Wire Line
 	7500 5050 7500 4700
-Connection ~ 6850 3600
-$Comp
-L C C?
-U 1 1 55C32FBA
-P 6850 4600
-F 0 "C?" H 6850 4700 40  0000 L CNN
-F 1 "10u" H 6856 4515 40  0000 L CNN
-F 2 "" H 6888 4450 30  0000 C CNN
-F 3 "" H 6850 4600 60  0000 C CNN
-	1    6850 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6850 4800 6700 4800
+	6450 4200 6950 4200
 Wire Wire Line
-	6700 4800 6700 3200
-Connection ~ 6700 3200
+	6300 4400 6450 4400
+Wire Wire Line
+	6800 4100 6950 4100
+Wire Wire Line
+	6800 3800 6800 4100
+Wire Wire Line
+	6700 3900 6950 3900
+Wire Wire Line
+	6950 3800 6800 3800
+Connection ~ 6800 3900
+Wire Wire Line
+	6800 3600 6950 3600
+Wire Wire Line
+	6950 3300 6800 3300
+Connection ~ 6800 3400
+Wire Wire Line
+	5350 3100 5500 3100
+Wire Wire Line
+	5700 2950 5950 2950
+Wire Wire Line
+	5950 2950 5950 3100
+Connection ~ 5950 3100
+Wire Wire Line
+	6650 3400 6950 3400
+Wire Wire Line
+	5500 2700 5650 2700
+Wire Wire Line
+	6150 2450 6150 2250
+Wire Wire Line
+	5100 4000 5100 3800
+Wire Wire Line
+	5100 3800 4850 3800
+Wire Wire Line
+	6300 3900 5200 3900
+Wire Wire Line
+	5200 3900 5200 3700
+Wire Wire Line
+	4850 3700 6950 3700
+Connection ~ 5200 3700
+Wire Wire Line
+	6800 3300 6800 3600
+Wire Wire Line
+	6950 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 3050
+Wire Wire Line
+	5000 3050 4850 3050
+Wire Wire Line
+	6250 3400 5050 3400
+Wire Wire Line
+	5050 3400 5050 2950
+Wire Wire Line
+	5050 2950 4850 2950
+Wire Wire Line
+	6950 3200 6050 3200
+Wire Wire Line
+	6050 3200 6050 3400
+Connection ~ 6050 3400
+Wire Wire Line
+	6200 3100 6200 3000
+Wire Wire Line
+	6200 3000 6950 3000
+Wire Wire Line
+	6950 3100 6650 3100
+Wire Wire Line
+	6650 3100 6650 1600
+Wire Wire Line
+	6600 2500 6950 2500
+Wire Wire Line
+	6600 2500 6600 2400
+Wire Wire Line
+	6600 2400 4850 2400
+Wire Wire Line
+	6950 2800 6550 2800
+Wire Wire Line
+	6550 2800 6550 2500
+Wire Wire Line
+	5400 3400 5400 3350
+Connection ~ 5400 3400
+Wire Wire Line
+	4850 2500 6050 2500
+Wire Wire Line
+	6050 2500 6050 2600
+Wire Wire Line
+	6050 2600 6300 2600
+Wire Wire Line
+	6300 2600 6300 2500
+Wire Wire Line
+	6300 2500 6550 2500
+Wire Wire Line
+	6950 2900 6200 2900
+Wire Wire Line
+	6200 2900 6200 2700
+Wire Wire Line
+	6200 2700 6050 2700
+Wire Wire Line
+	5100 2300 5100 3500
+Connection ~ 5100 3500
+Wire Wire Line
+	5300 2300 5300 2500
+Connection ~ 5300 2500
+Wire Wire Line
+	5600 3650 5650 3650
+Wire Wire Line
+	5650 3650 5650 3700
+Connection ~ 5650 3700
+Wire Wire Line
+	5000 4000 6950 4000
+Wire Wire Line
+	5000 4050 5000 4000
+Connection ~ 5100 4000
 $EndSCHEMATC
