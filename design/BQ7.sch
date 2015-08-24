@@ -6277,7 +6277,7 @@ AC AC 5C BE 7C 79 5F 5F 1F 7C 43 F5 FC F9 F3 3C 1E EF EC D9 B3 83 0F 84 20 23 48
 F7 01 0E 87 1B EB 22 BC 6F 50 95 22 E3 19 8A D9 08 32 21 0D 0C 0C B0 58 AC BF 1D E3 86 BC 15 3E 
 9F DF D1 D1 31 D6 A5 40 90 E1 4D 94 96 C0 77 F7 E1 9C E9 BB 40 B5 84 6A 00 41 90 F1 06 B5 8D 23 
 08 82 20 C8 04 83 62 36 82 20 08 82 4C 0C 38 D4 12 88 20 08 82 20 E3 1C 1A 1D 89 20 08 82 20 08 
-82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 A6 
+82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 6A 
 EndData
 $EndBitmap
 Text Notes 650  2200 0    60   ~ 0
@@ -7428,7 +7428,7 @@ L R R?
 U 1 1 55BCBD82
 P 6600 5650
 F 0 "R?" V 6680 5650 40  0000 C CNN
-F 1 "1K" V 6607 5651 40  0000 C CNN
+F 1 "100" V 6607 5651 40  0000 C CNN
 F 2 "" V 6530 5650 30  0000 C CNN
 F 3 "" H 6600 5650 30  0000 C CNN
 	1    6600 5650
@@ -7439,7 +7439,7 @@ L R R?
 U 1 1 55BCBF7F
 P 7000 5650
 F 0 "R?" V 7080 5650 40  0000 C CNN
-F 1 "1K" V 7007 5651 40  0000 C CNN
+F 1 "100" V 7007 5651 40  0000 C CNN
 F 2 "" V 6930 5650 30  0000 C CNN
 F 3 "" H 7000 5650 30  0000 C CNN
 	1    7000 5650
@@ -7520,9 +7520,10 @@ L R R?
 U 1 1 55BCE286
 P 6050 4400
 F 0 "R?" V 6130 4400 40  0000 C CNN
-F 1 "Rf 1M" V 6057 4401 40  0000 C CNN
+F 1 "1M" V 6057 4401 40  0000 C CNN
 F 2 "" V 5980 4400 30  0000 C CNN
 F 3 "" H 6050 4400 30  0000 C CNN
+F 4 "Rf" V 6050 4400 60  0001 C CNN "Name"
 	1    6050 4400
 	0    1    1    0   
 $EndComp
@@ -7535,9 +7536,10 @@ L R R?
 U 1 1 55BCC54A
 P 5400 1550
 F 0 "R?" V 5480 1550 40  0000 C CNN
-F 1 "Rgate" V 5407 1551 40  0000 C CNN
+F 1 "2M" V 5407 1551 40  0000 C CNN
 F 2 "" V 5330 1550 30  0000 C CNN
 F 3 "" H 5400 1550 30  0000 C CNN
+F 4 "Rgate" V 5400 1550 60  0001 C CNN "Name"
 	1    5400 1550
 	0    1    1    0   
 $EndComp
@@ -7557,9 +7559,10 @@ L R R?
 U 1 1 55BCCA4E
 P 4850 1000
 F 0 "R?" V 4930 1000 40  0000 C CNN
-F 1 "Rdrain" V 4857 1001 40  0000 C CNN
+F 1 "200" V 4857 1001 40  0000 C CNN
 F 2 "" V 4780 1000 30  0000 C CNN
 F 3 "" H 4850 1000 30  0000 C CNN
+F 4 "Rdrain" V 4850 1000 60  0001 C CNN "Name"
 	1    4850 1000
 	0    1    1    0   
 $EndComp
@@ -7695,28 +7698,6 @@ Text Label 4300 6400 2    60   ~ 0
 VC10X
 Text Label 4300 6000 2    60   ~ 0
 VC5X
-$Comp
-L C C?
-U 1 1 55BD7EDC
-P 5000 5800
-F 0 "C?" H 5000 5900 40  0000 L CNN
-F 1 "Cf 40u" H 5006 5715 40  0000 L CNN
-F 2 "" H 5038 5650 30  0000 C CNN
-F 3 "" H 5000 5800 60  0000 C CNN
-	1    5000 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 55BD7FD5
-P 5000 6200
-F 0 "C?" H 5000 6300 40  0000 L CNN
-F 1 "Cf 40u" H 5006 6115 40  0000 L CNN
-F 2 "" H 5038 6050 30  0000 C CNN
-F 3 "" H 5000 6200 60  0000 C CNN
-	1    5000 6200
-	1    0    0    -1  
-$EndComp
 Text Label 5950 4700 2    60   ~ 0
 BATT
 Text Label 4250 6800 2    60   ~ 0
@@ -7726,9 +7707,10 @@ L C C?
 U 1 1 55BD8ED7
 P 5000 6600
 F 0 "C?" H 5000 6700 40  0000 L CNN
-F 1 "Cf 40u" H 5006 6515 40  0000 L CNN
+F 1 "40u" H 5006 6515 40  0000 L CNN
 F 2 "" H 5038 6450 30  0000 C CNN
 F 3 "" H 5000 6600 60  0000 C CNN
+F 4 "Cf" H 5001 6600 60  0000 L CNB "Name"
 	1    5000 6600
 	1    0    0    -1  
 $EndComp
@@ -7766,7 +7748,7 @@ Text Notes 4900 6200 2    30   Italic 0
 Should be high value\n
 Text Notes 4900 6600 2    30   Italic 0
 Should be high value\n
-Text Notes 4400 550  0    39   ~ 0
+Text Notes 4650 350  0    39   ~ 0
 Because a voltage to REGSRC is to high we are going to use FET for limiting
 Text Notes 4200 1450 0    31   ~ 0
 Reflection wire or gate opening(proprtional to voltage diff)
@@ -7978,7 +7960,7 @@ Text Label 9850 1600 0    59   ~ 0
 VC10X
 Text Notes 6000 6100 0    20   ~ 0
 We are going to use 30 cell this is 15 so it's a half here it's a reason for this wierd BATT labels
-Text Notes 9150 5500 0    60   ~ 0
+Text Notes 8300 5500 0    60   ~ 0
 And overvoltage. They value must be very close to max batt voltage
 Text Notes 8500 5700 0    28   ~ 0
 And overvoltage. value must be very close to max batt voltage.
@@ -7999,7 +7981,7 @@ F 1 "10u" H 6506 3815 40  0000 L CNN
 F 2 "" H 6538 3750 30  0000 C CNN
 F 3 "" H 6500 3900 60  0000 C CNN
 	1    6500 3900
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C C?
@@ -8014,6 +7996,62 @@ F 3 "" H 6450 3400 60  0000 C CNN
 $EndComp
 Text Notes 6000 5200 0    60   ~ 0
 This should have only low side preasumably\nI dont need current twice
+Text Notes 6500 2550 0    40   ~ 0
+This should go to i2c ISO circuit
+$Comp
+L R R?
+U 1 1 55DBFB03
+P 5300 2050
+F 0 "R?" V 5380 2050 40  0000 C CNN
+F 1 "50k" V 5307 2051 40  0000 C CNN
+F 2 "" V 5230 2050 30  0000 C CNN
+F 3 "" H 5300 2050 30  0000 C CNN
+	1    5300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 55DC3CEE
+P 5000 6200
+F 0 "C?" H 5000 6300 40  0000 L CNN
+F 1 "40u" H 5006 6115 40  0000 L CNN
+F 2 "" H 5038 6050 30  0000 C CNN
+F 3 "" H 5000 6200 60  0000 C CNN
+F 4 "Cf" H 5001 6200 60  0000 L CNB "Name"
+	1    5000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 55DC3FA9
+P 5000 5800
+F 0 "C?" H 5000 5900 40  0000 L CNN
+F 1 "40u" H 5006 5715 40  0000 L CNN
+F 2 "" H 5038 5650 30  0000 C CNN
+F 3 "" H 5000 5800 60  0000 C CNN
+F 4 "Cf" H 5001 5800 60  0000 L CNB "Name"
+	1    5000 5800
+	1    0    0    -1  
+$EndComp
+Text HLabel 7850 1700 2    40   Input ~ 0
+ALERT
+Text Notes 7500 1650 0    40   ~ 0
+This pin also should be isolated
+Text Label 10200 2100 0    70   ~ 0
+BATT
+$Comp
+L DIODE D?
+U 1 1 55DE2295
+P 9900 2100
+F 0 "D?" H 9900 2200 40  0000 C CNN
+F 1 "DIODE" H 9900 2000 40  0000 C CNN
+F 2 "" H 9900 2100 60  0000 C CNN
+F 3 "" H 9900 2100 60  0000 C CNN
+	1    9900 2100
+	1    0    0    -1  
+$EndComp
+Text Notes 4200 800  0    40   ~ 0
+Vgeth=10V\nVgs=20V(Schocht 15V)\nVds=70V\nId(const)>3A(This is to much but...)\nVregsrc=36-25V(MAX)
 Wire Wire Line
 	7700 1050 7700 950 
 Wire Wire Line
@@ -8047,9 +8085,6 @@ Wire Wire Line
 Wire Wire Line
 	5100 1000 5450 1000
 Wire Wire Line
-	5300 1000 5300 750 
-Connection ~ 5300 1000
-Wire Wire Line
 	5700 1550 5650 1550
 Connection ~ 5650 1550
 Wire Wire Line
@@ -8063,8 +8098,6 @@ Wire Wire Line
 Wire Wire Line
 	5900 750  5850 750 
 Connection ~ 5900 1000
-Wire Wire Line
-	5300 750  5450 750 
 Connection ~ 6100 1000
 Wire Wire Line
 	6550 1000 6750 1000
@@ -8229,7 +8262,7 @@ Wire Wire Line
 	9400 1200 9400 2600
 Connection ~ 9400 2600
 Wire Wire Line
-	7700 1800 7700 1550
+	7700 1550 7700 1800
 Wire Wire Line
 	7050 1000 7050 1100
 Wire Wire Line
@@ -8272,7 +8305,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 2700 5650 2700
 Wire Wire Line
-	6150 2450 6150 2250
+	6150 2250 6150 2450
 Wire Wire Line
 	5100 4000 5100 3800
 Wire Wire Line
@@ -8287,13 +8320,13 @@ Connection ~ 5200 3700
 Wire Wire Line
 	6800 3300 6800 3600
 Wire Wire Line
-	6950 3500 5000 3500
+	5000 3500 6950 3500
 Wire Wire Line
 	5000 3500 5000 3050
 Wire Wire Line
 	5000 3050 4850 3050
 Wire Wire Line
-	6250 3400 5050 3400
+	5050 3400 6250 3400
 Wire Wire Line
 	5050 3400 5050 2950
 Wire Wire Line
@@ -8314,9 +8347,9 @@ Wire Wire Line
 Wire Wire Line
 	6600 2500 6950 2500
 Wire Wire Line
-	6600 2500 6600 2400
+	6600 2400 6600 2500
 Wire Wire Line
-	6600 2400 4850 2400
+	4850 2400 6600 2400
 Wire Wire Line
 	6950 2800 6550 2800
 Wire Wire Line
@@ -8356,4 +8389,21 @@ Wire Wire Line
 Wire Wire Line
 	5000 4050 5000 4000
 Connection ~ 5100 4000
+Wire Wire Line
+	7700 1700 7850 1700
+Connection ~ 7700 1700
+Wire Wire Line
+	10100 2100 10200 2100
+Wire Wire Line
+	9700 2100 9700 2600
+Connection ~ 9700 2600
+Wire Wire Line
+	5450 750  5350 750 
+Wire Wire Line
+	5350 750  5350 1000
+Connection ~ 5350 1000
+Text Notes 4350 1300 0    30   ~ 0
+We dont whant to much voltage drop here\nVd=(60V/Ruk)*R\nRuk=R+Rdevice\nIregsrc=120uA (MAX)\n		\n
+Text Notes 6100 650  0    40   ~ 0
+For transient current
 $EndSCHEMATC
