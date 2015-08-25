@@ -2906,7 +2906,7 @@ DA BB 24 68 56 F5 04 ED A2 0E F4 F4 F4 52 52 52 B8 5C 2E 8C 7D 52 5B 21 21 21 F5
 00 00 00 B4 1D 0B E6 2C 02 00 00 00 00 00 00 5A 85 C5 62 75 76 11 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 00 00 00 00 00 00 00 00 00 00 00 28 F5 FF 00 A1 2A 35 C4 84 81 83 FF 00 00 00 00 49 45 4E 44 AE 
-42 60 82 00 
+42 60 82 09 
 EndData
 $EndBitmap
 $Bitmap
@@ -6277,7 +6277,7 @@ AC AC 5C BE 7C 79 5F 5F 1F 7C 43 F5 FC F9 F3 3C 1E EF EC D9 B3 83 0F 84 20 23 48
 F7 01 0E 87 1B EB 22 BC 6F 50 95 22 E3 19 8A D9 08 32 21 0D 0C 0C B0 58 AC BF 1D E3 86 BC 15 3E 
 9F DF D1 D1 31 D6 A5 40 90 E1 4D 94 96 C0 77 F7 E1 9C E9 BB 40 B5 84 6A 00 41 90 F1 06 B5 8D 23 
 08 82 20 C8 04 83 62 36 82 20 08 82 4C 0C 38 D4 12 88 20 08 82 20 E3 1C 1A 1D 89 20 08 82 20 08 
-82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 6A 
+82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 33 
 EndData
 $EndBitmap
 Text Notes 650  2200 0    60   ~ 0
@@ -7322,72 +7322,6 @@ F 3 "" H 7700 950 60  0000 C CNN
 	1    7700 950 
 	-1   0    0    1   
 $EndComp
-$Comp
-L R R?
-U 1 1 558480EE
-P 5300 2050
-F 0 "R?" V 5380 2050 40  0000 C CNN
-F 1 "50k" V 5307 2051 40  0000 C CNN
-F 2 "" V 5230 2050 30  0000 C CNN
-F 3 "" H 5300 2050 30  0000 C CNN
-	1    5300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 55848215
-P 5100 2050
-F 0 "R?" V 5180 2050 40  0000 C CNN
-F 1 "50k" V 5107 2051 40  0000 C CNN
-F 2 "" V 5030 2050 30  0000 C CNN
-F 3 "" H 5100 2050 30  0000 C CNN
-	1    5100 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 5584841E
-P 4750 4050
-F 0 "R?" V 4830 4050 40  0000 C CNN
-F 1 "50k" V 4757 4051 40  0000 C CNN
-F 2 "" V 4680 4050 30  0000 C CNN
-F 3 "" H 4750 4050 30  0000 C CNN
-	1    4750 4050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L GND #PWR06
-U 1 1 55848488
-P 5300 1800
-F 0 "#PWR06" H 5300 1800 30  0001 C CNN
-F 1 "GND" H 5300 1730 30  0001 C CNN
-F 2 "" H 5300 1800 60  0000 C CNN
-F 3 "" H 5300 1800 60  0000 C CNN
-	1    5300 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR07
-U 1 1 5584850F
-P 5100 1800
-F 0 "#PWR07" H 5100 1800 30  0001 C CNN
-F 1 "GND" H 5100 1730 30  0001 C CNN
-F 2 "" H 5100 1800 60  0000 C CNN
-F 3 "" H 5100 1800 60  0000 C CNN
-	1    5100 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR08
-U 1 1 558485AD
-P 4500 4050
-F 0 "#PWR08" H 4500 4050 30  0001 C CNN
-F 1 "GND" H 4500 3980 30  0001 C CNN
-F 2 "" H 4500 4050 60  0000 C CNN
-F 3 "" H 4500 4050 60  0000 C CNN
-	1    4500 4050
-	0    1    1    0   
-$EndComp
 Text GLabel 7350 6250 2    60   Input ~ 0
 +BATT_out
 $Comp
@@ -7417,7 +7351,7 @@ L SHUNT R?
 U 1 1 55BCAC64
 P 6800 6250
 F 0 "R?" V 6880 6250 50  0000 C CNN
-F 1 "SHUNT 10K" V 6800 6250 50  0000 C CNN
+F 1 "SHUNT 0.001" V 6800 6250 50  0000 C CNN
 F 2 "" H 6800 6250 60  0000 C CNN
 F 3 "" H 6800 6250 60  0000 C CNN
 	1    6800 6250
@@ -7520,7 +7454,7 @@ L R R?
 U 1 1 55BCE286
 P 6050 4400
 F 0 "R?" V 6130 4400 40  0000 C CNN
-F 1 "1M" V 6057 4401 40  0000 C CNN
+F 1 "1K" V 6057 4401 40  0000 C CNN
 F 2 "" V 5980 4400 30  0000 C CNN
 F 3 "" H 6050 4400 30  0000 C CNN
 F 4 "Rf" V 6050 4400 60  0001 C CNN "Name"
@@ -7536,7 +7470,7 @@ L R R?
 U 1 1 55BCC54A
 P 5400 1550
 F 0 "R?" V 5480 1550 40  0000 C CNN
-F 1 "2M" V 5407 1551 40  0000 C CNN
+F 1 "100k" V 5407 1551 40  0000 C CNN
 F 2 "" V 5330 1550 30  0000 C CNN
 F 3 "" H 5400 1550 30  0000 C CNN
 F 4 "Rgate" V 5400 1550 60  0001 C CNN "Name"
@@ -7547,8 +7481,8 @@ $Comp
 L MOSFET_N Q?
 U 1 1 55BCC7C1
 P 5650 1100
-F 0 "Q?" H 5660 1270 60  0000 R CNN
-F 1 "MOSFET_N" V 5450 1300 60  0000 R CNN
+F 0 "Q?" V 5800 1150 60  0000 R CNN
+F 1 "BST82,215" V 5450 1350 60  0000 R CNN
 F 2 "" H 5650 1100 60  0000 C CNN
 F 3 "" H 5650 1100 60  0000 C CNN
 	1    5650 1100
@@ -7604,7 +7538,7 @@ L DIODE D?
 U 1 1 55BCD6D7
 P 6350 1000
 F 0 "D?" H 6350 1100 40  0000 C CNN
-F 1 "DIODE" H 6350 900 40  0000 C CNN
+F 1 "100V" H 6350 900 40  0000 C CNN
 F 2 "" H 6350 1000 60  0000 C CNN
 F 3 "" H 6350 1000 60  0000 C CNN
 	1    6350 1000
@@ -7615,7 +7549,7 @@ L R R?
 U 1 1 55BCE34A
 P 6350 750
 F 0 "R?" V 6430 750 40  0000 C CNN
-F 1 "Rd" V 6357 751 40  0000 C CNN
+F 1 "100" V 6357 751 40  0000 C CNN
 F 2 "" V 6280 750 30  0000 C CNN
 F 3 "" H 6350 750 30  0000 C CNN
 	1    6350 750 
@@ -7626,7 +7560,7 @@ L R R?
 U 1 1 55BCE620
 P 6750 1250
 F 0 "R?" V 6830 1250 40  0000 C CNN
-F 1 "Rsrc" V 6757 1251 40  0000 C CNN
+F 1 "100" V 6757 1251 40  0000 C CNN
 F 2 "" V 6680 1250 30  0000 C CNN
 F 3 "" H 6750 1250 30  0000 C CNN
 	1    6750 1250
@@ -7666,8 +7600,8 @@ $Comp
 L C C?
 U 1 1 55BCD3D7
 P 5700 3100
-F 0 "C?" V 5550 3050 40  0000 L CNN
-F 1 "12u" V 5850 3050 40  0000 L CNN
+F 0 "C?" V 5600 3050 40  0000 L CNN
+F 1 "4.7" V 5850 3050 40  0000 L CNN
 F 2 "" H 5738 2950 30  0000 C CNN
 F 3 "" H 5700 3100 60  0000 C CNN
 	1    5700 3100
@@ -7684,7 +7618,7 @@ F 3 "" H 5350 3100 60  0000 C CNN
 	1    5350 3100
 	0    1    1    0   
 $EndComp
-Text HLabel 5700 2950 0    60   Input ~ 0
+Text HLabel 5700 2900 0    60   Input ~ 0
 Vcc
 Text Notes 5650 4400 0    40   ~ 0
 Max BAT-VSS = 36V/25V\nso R must be quite high \n1M
@@ -7912,7 +7846,7 @@ F 3 "" H 8800 1400 60  0000 C CNN
 	1    8800 1400
 	0    -1   -1   0   
 $EndComp
-Text Notes 9600 1724 2    24   ~ 0
+Text Notes 9700 1750 2    24   ~ 0
 Schottky diode for avoding high current on pin(We go to 50A+ so..)
 $Sheet
 S 9800 2500 750  1850
@@ -7940,6 +7874,7 @@ F19 "VC12" I L 9800 2900 60
 F20 "VC13" I L 9800 2800 60 
 F21 "VC14" I L 9800 2700 60 
 F22 "VC15" I L 9800 2600 60 
+F23 "BATT" I R 10550 2900 60 
 $EndSheet
 Text Label 10800 2700 0    60   ~ 0
 A
@@ -7964,8 +7899,6 @@ Text Notes 8300 5500 0    60   ~ 0
 And overvoltage. They value must be very close to max batt voltage
 Text Notes 8500 5700 0    28   ~ 0
 And overvoltage. value must be very close to max batt voltage.
-Text Notes 6200 5750 0    28   ~ 0
-Maybe to high value VSS and SRP will have to much  voltage diff.\n
 Text Notes 800  1450 0    59   ~ 0
 Be caerfull with VSS and other pins beacuse we must maintaine \na specific max voltage diff  between pins.\n
 Text Notes 6900 2350 0    28   ~ 0
@@ -7999,17 +7932,6 @@ This should have only low side preasumably\nI dont need current twice
 Text Notes 6500 2550 0    40   ~ 0
 This should go to i2c ISO circuit
 $Comp
-L R R?
-U 1 1 55DBFB03
-P 5300 2050
-F 0 "R?" V 5380 2050 40  0000 C CNN
-F 1 "50k" V 5307 2051 40  0000 C CNN
-F 2 "" V 5230 2050 30  0000 C CNN
-F 3 "" H 5300 2050 30  0000 C CNN
-	1    5300 2050
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C?
 U 1 1 55DC3CEE
 P 5000 6200
@@ -8037,21 +7959,20 @@ Text HLabel 7850 1700 2    40   Input ~ 0
 ALERT
 Text Notes 7500 1650 0    40   ~ 0
 This pin also should be isolated
-Text Label 10200 2100 0    70   ~ 0
-BATT
-$Comp
-L DIODE D?
-U 1 1 55DE2295
-P 9900 2100
-F 0 "D?" H 9900 2200 40  0000 C CNN
-F 1 "DIODE" H 9900 2000 40  0000 C CNN
-F 2 "" H 9900 2100 60  0000 C CNN
-F 3 "" H 9900 2100 60  0000 C CNN
-	1    9900 2100
-	1    0    0    -1  
-$EndComp
 Text Notes 4200 800  0    40   ~ 0
 Vgeth=10V\nVgs=20V(Schocht 15V)\nVds=70V\nId(const)>3A(This is to much but...)\nVregsrc=36-25V(MAX)
+Text Notes 4350 1350 0    30   ~ 0
+We dont whant to much voltage drop here\nVd=(60V/Ruk)*R\nRuk=R+Rdevice\nIregsrc=120uA (MAX)\n		\n
+Text Notes 6100 650  0    40   ~ 0
+For transient current
+Text Notes 5850 1600 0    40   ~ 0
+5,2
+Text Notes 6050 1300 0    40   ~ 0
+5,2
+Text Notes 5300 550  0    30   ~ 0
+Reverse diode incorporated in FET
+Text Notes 8450 1050 0    40   ~ 0
+In general we dont need this diodes but I would like to have them
 Wire Wire Line
 	7700 1050 7700 950 
 Wire Wire Line
@@ -8296,9 +8217,9 @@ Connection ~ 6800 3400
 Wire Wire Line
 	5350 3100 5500 3100
 Wire Wire Line
-	5700 2950 5950 2950
+	5700 2900 5950 2900
 Wire Wire Line
-	5950 2950 5950 3100
+	5950 2900 5950 3100
 Connection ~ 5950 3100
 Wire Wire Line
 	6650 3400 6950 3400
@@ -8374,36 +8295,44 @@ Wire Wire Line
 Wire Wire Line
 	6200 2700 6050 2700
 Wire Wire Line
-	5100 2300 5100 3500
-Connection ~ 5100 3500
-Wire Wire Line
-	5300 2300 5300 2500
-Connection ~ 5300 2500
-Wire Wire Line
 	5600 3650 5650 3650
 Wire Wire Line
 	5650 3650 5650 3700
 Connection ~ 5650 3700
 Wire Wire Line
-	5000 4000 6950 4000
-Wire Wire Line
-	5000 4050 5000 4000
-Connection ~ 5100 4000
-Wire Wire Line
 	7700 1700 7850 1700
 Connection ~ 7700 1700
-Wire Wire Line
-	10100 2100 10200 2100
-Wire Wire Line
-	9700 2100 9700 2600
-Connection ~ 9700 2600
 Wire Wire Line
 	5450 750  5350 750 
 Wire Wire Line
 	5350 750  5350 1000
 Connection ~ 5350 1000
-Text Notes 4350 1300 0    30   ~ 0
-We dont whant to much voltage drop here\nVd=(60V/Ruk)*R\nRuk=R+Rdevice\nIregsrc=120uA (MAX)\n		\n
-Text Notes 6100 650  0    40   ~ 0
-For transient current
+Wire Wire Line
+	5100 4000 6950 4000
+Connection ~ 9700 2600
+Wire Wire Line
+	9700 2100 9700 2600
+Wire Wire Line
+	10100 2100 10200 2100
+$Comp
+L DIODE D?
+U 1 1 55DE2295
+P 9900 2100
+F 0 "D?" H 9900 2200 40  0000 C CNN
+F 1 "DIODE" H 9900 2000 40  0000 C CNN
+F 2 "" H 9900 2100 60  0000 C CNN
+F 3 "" H 9900 2100 60  0000 C CNN
+	1    9900 2100
+	1    0    0    -1  
+$EndComp
+Text Label 10200 2100 0    70   ~ 0
+BATT
+Text Notes 5300 4200 0    30   ~ 0
+Maybe best to be same as Rin
+Text GLabel 10850 2900 2    60   Input ~ 0
++BATT
+Wire Wire Line
+	10550 2900 10850 2900
+Text Notes 4950 1750 0    30   ~ 0
+Maybe voltage and current is \nvery small so rewire this R if need
 $EndSCHEMATC
