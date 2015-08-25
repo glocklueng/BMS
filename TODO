@@ -16,13 +16,17 @@ Code for are board
 
 PCB designn (be carefull 100V and more) - 2 PCB one BMS other DC/DC(BMS board is controling DC/DC board maybe you can put another MCU on that board) - medic
 
-Because batterys would be on two sides a separate BMS board with two separated(but they should communicate with each other and if we are going to this design we could add another MCU just for comm with ECU) 
+Because batterys would be on two sides a separate BMS board with two separated(but they should communicate with each otherand if we are going to this design we could add another MCU just for comm with ECU) 
 
 IN this document ECU is a RaspPI and its only purpose is monitor and general control
 
-Determinater values of R and C in scheme (please write how you did it so others can check)
+Determiner values of R and C in scheme (please write how you did it so others can check)
 
+Fix if any mistake in values in BQ schematic
 
+Separate low and high BQ(low will be used as LDO for MCU) and high need iso circuit for MCU
+
+Connect battery in between
 #########################################################################################################################
 # Done stuff(just for record) - you can place in other file if you want
 #########################################################################################################################

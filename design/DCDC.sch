@@ -70,4 +70,6 @@ Text HLabel 6150 1500 0    60   BiDi ~ 0
 FAULTSTOP
 Text Notes 5600 650  0    60   ~ 0
 Data pins
+Text Notes 1400 2350 0    60   ~ 0
+Short\nThis could be main DC/DC converter from batterys to motors\n20kW \nBut about 10A-30A for charing would be satisfing
 $EndSCHEMATC

@@ -127,7 +127,7 @@ F0 "Battery cell" 60
 F1 "Batt.sch" 60
 $EndSheet
 $Sheet
-S 7000 1150 2250 700 
+S 6900 900  2250 700 
 U 3A58CB36
 F0 "Battery_pack" 60
 F1 "Batt_pack.sch" 20
@@ -195,4 +195,6 @@ Wire Wire Line
 	3700 4850 3700 5650
 Wire Wire Line
 	3700 5650 4100 5650
+Text Notes 5200 5200 0    60   ~ 0
+This goes to BMS charge input
 $EndSCHEMATC
