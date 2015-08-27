@@ -6277,7 +6277,7 @@ AC AC 5C BE 7C 79 5F 5F 1F 7C 43 F5 FC F9 F3 3C 1E EF EC D9 B3 83 0F 84 20 23 48
 F7 01 0E 87 1B EB 22 BC 6F 50 95 22 E3 19 8A D9 08 32 21 0D 0C 0C B0 58 AC BF 1D E3 86 BC 15 3E 
 9F DF D1 D1 31 D6 A5 40 90 E1 4D 94 96 C0 77 F7 E1 9C E9 BB 40 B5 84 6A 00 41 90 F1 06 B5 8D 23 
 08 82 20 C8 04 83 62 36 82 20 08 82 4C 0C 38 D4 12 88 20 08 82 20 E3 1C 1A 1D 89 20 08 82 20 08 
-82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 33 
+82 20 08 82 20 23 ED FF 01 11 4E 07 64 6B 3C CF 2D 00 00 00 00 49 45 4E 44 AE 42 60 82 11 
 EndData
 $EndBitmap
 Text Notes 650  2200 0    60   ~ 0
@@ -7305,7 +7305,7 @@ L R R?
 U 1 1 558476E6
 P 7700 1300
 F 0 "R?" V 7780 1300 40  0000 C CNN
-F 1 "5M" V 7707 1301 40  0000 C CNN
+F 1 "300K" V 7707 1301 40  0000 C CNN
 F 2 "" V 7630 1300 30  0000 C CNN
 F 3 "" H 7700 1300 30  0000 C CNN
 	1    7700 1300
@@ -7449,18 +7449,6 @@ F 3 "" H 6150 2450 60  0000 C CNN
 $EndComp
 Text GLabel 5300 4400 0    60   Input Italic 0
 +BATT
-$Comp
-L R R?
-U 1 1 55BCE286
-P 6050 4400
-F 0 "R?" V 6130 4400 40  0000 C CNN
-F 1 "1K" V 6057 4401 40  0000 C CNN
-F 2 "" V 5980 4400 30  0000 C CNN
-F 3 "" H 6050 4400 30  0000 C CNN
-F 4 "Rf" V 6050 4400 60  0001 C CNN "Name"
-	1    6050 4400
-	0    1    1    0   
-$EndComp
 Text Notes 4900 5800 2    30   Italic 0
 Should be high value\n
 Text Label 5600 3650 2    50   Italic 0
@@ -7510,28 +7498,6 @@ F 2 "" H 5650 750 60  0000 C CNN
 F 3 "" H 5650 750 60  0000 C CNN
 	1    5650 750 
 	-1   0    0    1   
-$EndComp
-$Comp
-L DIODESCH D?
-U 1 1 55BCCD2B
-P 5900 1550
-F 0 "D?" H 5900 1650 40  0000 C CNN
-F 1 "DIODESCH" H 5900 1450 40  0000 C CNN
-F 2 "" H 5900 1550 60  0000 C CNN
-F 3 "" H 5900 1550 60  0000 C CNN
-	1    5900 1550
-	-1   0    0    1   
-$EndComp
-$Comp
-L DIODESCH D?
-U 1 1 55BCCDCE
-P 6100 1250
-F 0 "D?" H 6100 1350 40  0000 C CNN
-F 1 "DIODESCH" H 6100 1150 40  0000 C CNN
-F 2 "" H 6100 1250 60  0000 C CNN
-F 3 "" H 6100 1250 60  0000 C CNN
-	1    6100 1250
-	0    -1   -1   0   
 $EndComp
 $Comp
 L DIODE D?
@@ -7620,8 +7586,6 @@ F 3 "" H 5350 3100 60  0000 C CNN
 $EndComp
 Text HLabel 5700 2900 0    60   Input ~ 0
 Vcc
-Text Notes 5650 4400 0    40   ~ 0
-Max BAT-VSS = 36V/25V\nso R must be quite high \n1M
 Text Label 5400 3350 2    60   ~ 0
 VC5X
 Text Label 6150 2250 2    60   ~ 0
@@ -7973,6 +7937,45 @@ Text Notes 5300 550  0    30   ~ 0
 Reverse diode incorporated in FET
 Text Notes 8450 1050 0    40   ~ 0
 In general we dont need this diodes but I would like to have them
+$Comp
+L DIODE D?
+U 1 1 55DE2295
+P 9900 2100
+F 0 "D?" H 9900 2200 40  0000 C CNN
+F 1 "DIODE" H 9900 2000 40  0000 C CNN
+F 2 "" H 9900 2100 60  0000 C CNN
+F 3 "" H 9900 2100 60  0000 C CNN
+	1    9900 2100
+	1    0    0    -1  
+$EndComp
+Text Label 10200 2100 0    70   ~ 0
+BATT
+Text GLabel 10850 2900 2    60   Input ~ 0
++BATT
+Text Notes 4950 1750 0    30   ~ 0
+Maybe voltage and current is \nvery small so rewire this R if need
+$Comp
+L ZENER D?
+U 1 1 55E23569
+P 5900 1550
+F 0 "D?" H 5900 1650 50  0000 C CNN
+F 1 "ZENER" H 5900 1450 40  0000 C CNN
+F 2 "" H 5900 1550 60  0000 C CNN
+F 3 "" H 5900 1550 60  0000 C CNN
+	1    5900 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L ZENER D?
+U 1 1 55E23858
+P 6100 1250
+F 0 "D?" H 6100 1350 50  0000 C CNN
+F 1 "ZENER" H 6100 1150 40  0000 C CNN
+F 2 "" H 6100 1250 60  0000 C CNN
+F 3 "" H 6100 1250 60  0000 C CNN
+	1    6100 1250
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
 	7700 1050 7700 950 
 Wire Wire Line
@@ -7999,8 +8002,6 @@ Wire Wire Line
 	6300 6250 6300 6550
 Connection ~ 6300 6250
 Connection ~ 6150 2400
-Wire Wire Line
-	5800 4400 5300 4400
 Wire Wire Line
 	6600 5300 6250 5300
 Wire Wire Line
@@ -8199,8 +8200,6 @@ Wire Wire Line
 Wire Wire Line
 	6450 4200 6950 4200
 Wire Wire Line
-	6300 4400 6450 4400
-Wire Wire Line
 	6800 4100 6950 4100
 Wire Wire Line
 	6800 3800 6800 4100
@@ -8314,25 +8313,26 @@ Wire Wire Line
 	9700 2100 9700 2600
 Wire Wire Line
 	10100 2100 10200 2100
-$Comp
-L DIODE D?
-U 1 1 55DE2295
-P 9900 2100
-F 0 "D?" H 9900 2200 40  0000 C CNN
-F 1 "DIODE" H 9900 2000 40  0000 C CNN
-F 2 "" H 9900 2100 60  0000 C CNN
-F 3 "" H 9900 2100 60  0000 C CNN
-	1    9900 2100
-	1    0    0    -1  
-$EndComp
-Text Label 10200 2100 0    70   ~ 0
-BATT
-Text Notes 5300 4200 0    30   ~ 0
-Maybe best to be same as Rin
-Text GLabel 10850 2900 2    60   Input ~ 0
-+BATT
 Wire Wire Line
 	10550 2900 10850 2900
-Text Notes 4950 1750 0    30   ~ 0
-Maybe voltage and current is \nvery small so rewire this R if need
+Text Notes 5300 4200 0    30   ~ 0
+Maybe best to be same as Rin
+Wire Wire Line
+	6300 4400 6450 4400
+Wire Wire Line
+	5800 4400 5300 4400
+Text Notes 5650 4400 0    40   ~ 0
+Max BAT-VSS = 36V/25V\nso R must be quite high \n1M
+$Comp
+L R R?
+U 1 1 55BCE286
+P 6050 4400
+F 0 "R?" V 6130 4400 40  0000 C CNN
+F 1 "1K" V 6057 4401 40  0000 C CNN
+F 2 "" V 5980 4400 30  0000 C CNN
+F 3 "" H 6050 4400 30  0000 C CNN
+F 4 "Rf" V 6050 4400 60  0001 C CNN "Name"
+	1    6050 4400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
