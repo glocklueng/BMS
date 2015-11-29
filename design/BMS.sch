@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:BMS-rescue
 LIBS:iso5500
 LIBS:crf_1
 LIBS:BQ76940
@@ -84,7 +85,7 @@ F 4 "230V sin" H 950 3500 60  0000 C CNN "Voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDA #PWR02
+L GNDA-RESCUE-BMS #PWR02
 U 1 1 55BB9220
 P 5200 1700
 F 0 "#PWR02" H 5200 1700 40  0001 C CNN

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:BMS-rescue
 LIBS:iso5500
 LIBS:crf_1
 LIBS:BQ76940

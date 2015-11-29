@@ -1,8 +1,5 @@
 EESchema Schematic File Version 2
-LIBS:BMS-rescue
-LIBS:iso5500
-LIBS:crf_1
-LIBS:BQ76940
+LIBS:BQ-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -32,12 +29,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:BMS-cache
+LIBS:BQ-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 101
+Sheet 3 33
 Title "Battery Pack"
 Date ""
 Rev ""
@@ -117,9 +114,10 @@ AR Path="/55BB8FBC/3A5B5476/3A50FF92" Ref="R"  Part="1"
 AR Path="/3A58CB36/3A50FF92" Ref="R"  Part="1" 
 AR Path="/55C14E4B/3A5B5476/3A50FF92" Ref="R"  Part="1" 
 AR Path="/3A50FF92" Ref="R"  Part="1" 
-F 0 "R" V 6630 4400 40  0000 C CNN
+AR Path="/3A5B5476/3A50FF92" Ref="R15"  Part="1" 
+F 0 "R15" V 6630 4400 40  0000 C CNN
 F 1 "1K" V 6557 4401 40  0000 C CNN
-F 2 "" V 6480 4400 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6480 4400 30  0001 C CNN
 F 3 "" H 6550 4400 30  0000 C CNN
 	1    6550 4400
 	0    1    1    0   
@@ -132,9 +130,10 @@ AR Path="/55BB8FBC/3A5B5476/3A513D90" Ref="Cc?"  Part="1"
 AR Path="/3A58CB36/3A513D90" Ref="Cc5"  Part="1" 
 AR Path="/55C14E4B/3A5B5476/3A513D90" Ref="Cc5"  Part="1" 
 AR Path="/3A513D90" Ref="Cc?"  Part="1" 
-F 0 "Cc?" H 6450 4250 40  0000 L CNN
+AR Path="/3A5B5476/3A513D90" Ref="Cc3"  Part="1" 
+F 0 "Cc3" H 6450 4250 40  0000 L CNN
 F 1 "1ou" H 6456 4065 40  0000 L CNN
-F 2 "" H 6488 4000 30  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6488 4000 30  0001 C CNN
 F 3 "" H 6450 4150 60  0000 C CNN
 	1    6450 4150
 	0    -1   -1   0   
@@ -147,9 +146,10 @@ AR Path="/55BB8FBC/3A5B5476/3A5210D8" Ref="R?"  Part="1"
 AR Path="/3A58CB36/3A5210D8" Ref="R?"  Part="1" 
 AR Path="/55C14E4B/3A5B5476/3A5210D8" Ref="R?"  Part="1" 
 AR Path="/3A5210D8" Ref="R?"  Part="1" 
-F 0 "R?" V 6580 6100 40  0000 C CNN
+AR Path="/3A5B5476/3A5210D8" Ref="R13"  Part="1" 
+F 0 "R13" V 6580 6100 40  0000 C CNN
 F 1 "1K" V 6507 6101 40  0000 C CNN
-F 2 "" V 6430 6100 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6430 6100 30  0001 C CNN
 F 3 "" H 6500 6100 30  0000 C CNN
 	1    6500 6100
 	0    1    1    0   
@@ -162,9 +162,10 @@ AR Path="/55BB8FBC/3A5B5476/3A5210DE" Ref="Cc?"  Part="1"
 AR Path="/3A58CB36/3A5210DE" Ref="Cc?"  Part="1" 
 AR Path="/55C14E4B/3A5B5476/3A5210DE" Ref="Cc?"  Part="1" 
 AR Path="/3A5210DE" Ref="Cc?"  Part="1" 
-F 0 "Cc?" H 6400 5950 40  0000 L CNN
+AR Path="/3A5B5476/3A5210DE" Ref="Cc1"  Part="1" 
+F 0 "Cc1" H 6400 5950 40  0000 L CNN
 F 1 "10u" H 6406 5765 40  0000 L CNN
-F 2 "" H 6438 5700 30  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6438 5700 30  0001 C CNN
 F 3 "" H 6400 5850 60  0000 C CNN
 	1    6400 5850
 	0    -1   -1   0   
@@ -243,9 +244,10 @@ AR Path="/55BB8FBC/3A5B5476/3A53561F" Ref="R?"  Part="1"
 AR Path="/3A58CB36/3A53561F" Ref="R?"  Part="1" 
 AR Path="/55C14E4B/3A5B5476/3A53561F" Ref="R?"  Part="1" 
 AR Path="/3A53561F" Ref="R?"  Part="1" 
-F 0 "R?" V 6630 2700 40  0000 C CNN
+AR Path="/3A5B5476/3A53561F" Ref="R14"  Part="1" 
+F 0 "R14" V 6630 2700 40  0000 C CNN
 F 1 "1K" V 6557 2701 40  0000 C CNN
-F 2 "" V 6480 2700 30  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 6480 2700 30  0001 C CNN
 F 3 "" H 6550 2700 30  0000 C CNN
 	1    6550 2700
 	0    1    1    0   
@@ -550,12 +552,12 @@ BATT
 Text Notes 4150 950  0    60   ~ 0
 Mess bellow. Batt_ball circuit are sharing every pin expect last and first\nSo becase they are sharing pin they are sharing a Rin so only\nlast should have it.(IN every block).
 $Comp
-L C C?
+L C Cc2
 U 1 1 565BDFD2
 P 6450 2450
-F 0 "C?" H 6475 2550 50  0000 L CNN
+F 0 "Cc2" H 6475 2550 50  0000 L CNN
 F 1 "10u" H 6475 2350 50  0000 L CNN
-F 2 "" H 6488 2300 30  0000 C CNN
+F 2 "Capacitors_SMD:C_0805" H 6488 2300 30  0001 C CNN
 F 3 "" H 6450 2450 60  0000 C CNN
 	1    6450 2450
 	0    1    1    0   
