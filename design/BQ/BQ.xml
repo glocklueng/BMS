@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/ekart/BMS/design/BQ/BQ.sch</source>
-    <date>Sun 29 Nov 2015 02:05:26 AM CET</date>
+    <date>Mon 07 Dec 2015 07:34:21 PM CET</date>
     <tool>Eeschema 2015.08.03-3.rev6041.fc23-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -752,7 +752,7 @@
     </comp>
     <comp ref="K1">
       <value>XLR3</value>
-      <footprint>Wire_Pads:SolderWirePad_2x_2mmDrill</footprint>
+      <footprint>JSTcon:b2b-ph-kl</footprint>
       <libsource lib="conn" part="XLR3"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>565A0867</tstamp>
@@ -1794,6 +1794,21 @@
     </comp>
   </components>
   <libparts>
+    <libpart lib="BQ-rescue" part="ZENER-RESCUE-BMS">
+      <footprints>
+        <fp>D?</fp>
+        <fp>SO*</fp>
+        <fp>SM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">ZENER-RESCUE-BMS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="device" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
@@ -1812,38 +1827,6 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="BQ-rescue" part="R-RESCUE-BMS">
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R-RESCUE-BMS</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="BQ-rescue" part="ZENER-RESCUE-BMS">
-      <footprints>
-        <fp>D?</fp>
-        <fp>SO*</fp>
-        <fp>SM*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">ZENER-RESCUE-BMS</field>
-      </fields>
-      <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="BQ-rescue" part="C-RESCUE-BMS">
       <footprints>
         <fp>SM*</fp>
@@ -1857,18 +1840,6 @@
       <pins>
         <pin num="1" name="~" type="passive"/>
         <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="conn" part="XLR3">
-      <description>XLR 3 pins</description>
-      <fields>
-        <field name="Reference">K</field>
-        <field name="Value">XLR3</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-        <pin num="3" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="BQ-cache" part="BATTERY">
@@ -1996,16 +1967,45 @@
         <pin num="4" name="~" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="conn" part="XLR3">
+      <description>XLR 3 pins</description>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">XLR3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="BQ-rescue" part="R-RESCUE-BMS">
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R-RESCUE-BMS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
-    <library logical="device">
-      <uri>/usr/share/kicad/library/device.lib</uri>
-    </library>
-    <library logical="BQ-rescue">
-      <uri>BQ-rescue.lib</uri>
-    </library>
     <library logical="conn">
       <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="BQ-rescue">
+      <uri>/home/ekart/BMS/design/BQ/BQ-rescue.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="BQ-cache">
       <uri>/home/ekart/BMS/design/BQ/BQ-cache.lib</uri>
@@ -2015,90 +2015,90 @@
     <net code="1" name="/Battery_pack/VC5">
       <node ref="C12" pin="2"/>
       <node ref="R25" pin="1"/>
-      <node ref="U1" pin="36"/>
       <node ref="D5" pin="1"/>
+      <node ref="U1" pin="36"/>
     </net>
     <net code="2" name="/Battery_pack/VC8">
-      <node ref="R43" pin="1"/>
       <node ref="C23" pin="1"/>
-      <node ref="C22" pin="2"/>
+      <node ref="R43" pin="1"/>
       <node ref="R42" pin="1"/>
       <node ref="D9" pin="2"/>
       <node ref="U1" pin="32"/>
+      <node ref="C22" pin="2"/>
     </net>
     <net code="3" name="/Battery_pack/VC7">
+      <node ref="U1" pin="33"/>
       <node ref="D16" pin="2"/>
+      <node ref="C19" pin="2"/>
       <node ref="R40" pin="1"/>
       <node ref="C22" pin="1"/>
-      <node ref="C19" pin="2"/>
-      <node ref="U1" pin="33"/>
       <node ref="R39" pin="1"/>
     </net>
     <net code="4" name="/Battery_pack/VC6">
-      <node ref="D12" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="R31" pin="1"/>
       <node ref="C19" pin="1"/>
+      <node ref="R31" pin="1"/>
+      <node ref="C13" pin="2"/>
       <node ref="U1" pin="34"/>
       <node ref="R30" pin="1"/>
+      <node ref="D12" pin="2"/>
     </net>
     <net code="5" name="/Battery_pack/B">
-      <node ref="D7" pin="1"/>
-      <node ref="BT11" pin="1"/>
-      <node ref="Cc2" pin="1"/>
-      <node ref="D6" pin="1"/>
-      <node ref="R45" pin="1"/>
-      <node ref="D15" pin="1"/>
-      <node ref="D10" pin="1"/>
-      <node ref="D11" pin="1"/>
-      <node ref="D14" pin="1"/>
-      <node ref="R44" pin="2"/>
-      <node ref="U1" pin="15"/>
       <node ref="R53" pin="2"/>
+      <node ref="BT12" pin="2"/>
+      <node ref="D6" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="15"/>
+      <node ref="Cf2" pin="2"/>
+      <node ref="C8" pin="1"/>
+      <node ref="Cf3" pin="1"/>
+      <node ref="D15" pin="1"/>
+      <node ref="D11" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="D14" pin="1"/>
+      <node ref="D10" pin="1"/>
       <node ref="R14" pin="1"/>
       <node ref="R48" pin="1"/>
-      <node ref="Cf2" pin="2"/>
+      <node ref="R44" pin="2"/>
+      <node ref="BT10" pin="1"/>
+      <node ref="R45" pin="1"/>
       <node ref="D31" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="BT12" pin="2"/>
       <node ref="R12" pin="2"/>
-      <node ref="Cf3" pin="1"/>
       <node ref="C2" pin="1"/>
-      <node ref="R2" pin="2"/>
+      <node ref="Cc2" pin="1"/>
       <node ref="Q13" pin="D"/>
       <node ref="D18" pin="2"/>
-      <node ref="BT10" pin="1"/>
+      <node ref="BT11" pin="1"/>
     </net>
     <net code="6" name="/Battery_pack/VC13">
       <node ref="U1" pin="26"/>
-      <node ref="R59" pin="1"/>
       <node ref="R58" pin="1"/>
       <node ref="C27" pin="2"/>
-      <node ref="C28" pin="1"/>
       <node ref="D6" pin="2"/>
+      <node ref="R59" pin="1"/>
+      <node ref="C28" pin="1"/>
     </net>
     <net code="7" name="/Battery_pack/VC12">
       <node ref="C26" pin="2"/>
       <node ref="U1" pin="27"/>
-      <node ref="R56" pin="1"/>
-      <node ref="C27" pin="1"/>
-      <node ref="R55" pin="1"/>
       <node ref="D7" pin="2"/>
+      <node ref="C27" pin="1"/>
+      <node ref="R56" pin="1"/>
+      <node ref="R55" pin="1"/>
     </net>
     <net code="8" name="/Battery_pack/VC11">
-      <node ref="R53" pin="1"/>
-      <node ref="C20" pin="2"/>
-      <node ref="C26" pin="1"/>
-      <node ref="R52" pin="1"/>
-      <node ref="U1" pin="28"/>
       <node ref="D11" pin="2"/>
+      <node ref="R53" pin="1"/>
+      <node ref="C26" pin="1"/>
+      <node ref="U1" pin="28"/>
+      <node ref="C20" pin="2"/>
+      <node ref="R52" pin="1"/>
     </net>
     <net code="9" name="/Battery_pack/VC10">
       <node ref="D17" pin="2"/>
       <node ref="C18" pin="2"/>
       <node ref="D18" pin="1"/>
-      <node ref="U1" pin="30"/>
       <node ref="R44" pin="1"/>
+      <node ref="U1" pin="30"/>
     </net>
     <net code="10" name="Net-(C10-Pad2)">
       <node ref="U1" pin="9"/>
@@ -2106,27 +2106,27 @@
       <node ref="R6" pin="2"/>
     </net>
     <net code="11" name="-BATT_In">
+      <node ref="R10" pin="2"/>
       <node ref="R36" pin="1"/>
       <node ref="C5" pin="2"/>
-      <node ref="C10" pin="1"/>
       <node ref="C14" pin="1"/>
-      <node ref="R10" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="R7" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U1" pin="3"/>
-      <node ref="Cf1" pin="1"/>
       <node ref="K1" pin="3"/>
-      <node ref="R9" pin="2"/>
       <node ref="R13" pin="1"/>
       <node ref="Cc1" pin="2"/>
       <node ref="C1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C6" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="Cf1" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="R9" pin="2"/>
     </net>
     <net code="12" name="Net-(D2-Pad2)">
+      <node ref="Q1" pin="G"/>
       <node ref="D2" pin="2"/>
       <node ref="R2" pin="1"/>
-      <node ref="Q1" pin="G"/>
     </net>
     <net code="13" name="Net-(D4-Pad2)">
       <node ref="R6" pin="1"/>
@@ -2134,34 +2134,34 @@
       <node ref="D4" pin="2"/>
     </net>
     <net code="14" name="/Battery_pack/VC3">
-      <node ref="C16" pin="2"/>
       <node ref="R23" pin="1"/>
-      <node ref="U1" pin="38"/>
-      <node ref="R24" pin="1"/>
+      <node ref="C16" pin="2"/>
       <node ref="C17" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="U1" pin="38"/>
     </net>
     <net code="15" name="/Battery_pack/VC2">
-      <node ref="R21" pin="1"/>
-      <node ref="C16" pin="1"/>
-      <node ref="U1" pin="39"/>
       <node ref="R20" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="U1" pin="39"/>
       <node ref="C15" pin="2"/>
     </net>
     <net code="16" name="/Battery_pack/VC1">
       <node ref="C14" pin="2"/>
+      <node ref="U1" pin="40"/>
       <node ref="R17" pin="1"/>
       <node ref="C15" pin="1"/>
-      <node ref="U1" pin="40"/>
       <node ref="R18" pin="1"/>
     </net>
     <net code="17" name="+BATT_out">
       <node ref="R7" pin="1"/>
     </net>
     <net code="18" name="/BATT">
-      <node ref="R3" pin="1"/>
       <node ref="Cf3" pin="2"/>
-      <node ref="U1" pin="20"/>
+      <node ref="R3" pin="1"/>
       <node ref="D19" pin="2"/>
+      <node ref="U1" pin="20"/>
     </net>
     <net code="19" name="/DSG">
       <node ref="U1" pin="1"/>
@@ -2169,25 +2169,25 @@
     </net>
     <net code="20" name="+BATT">
       <node ref="R1" pin="2"/>
-      <node ref="R3" pin="2"/>
-      <node ref="BT15" pin="1"/>
       <node ref="R60" pin="2"/>
       <node ref="R61" pin="1"/>
+      <node ref="BT15" pin="1"/>
+      <node ref="R3" pin="2"/>
     </net>
     <net code="21" name="/Battery_pack/VC15">
+      <node ref="U1" pin="24"/>
       <node ref="C21" pin="2"/>
       <node ref="R60" pin="1"/>
       <node ref="D14" pin="2"/>
       <node ref="D19" pin="1"/>
-      <node ref="U1" pin="24"/>
     </net>
     <net code="22" name="Net-(C5-Pad1)">
       <node ref="U1" pin="7"/>
       <node ref="C5" pin="1"/>
     </net>
     <net code="23" name="/ALERT">
-      <node ref="R9" pin="1"/>
       <node ref="U1" pin="44"/>
+      <node ref="R9" pin="1"/>
     </net>
     <net code="24" name="/SCL">
       <node ref="U1" pin="5"/>
@@ -2201,25 +2201,25 @@
       <node ref="R12" pin="1"/>
     </net>
     <net code="27" name="Net-(C7-Pad2)">
-      <node ref="U1" pin="14"/>
       <node ref="C7" pin="2"/>
-      <node ref="U1" pin="11"/>
       <node ref="U1" pin="12"/>
+      <node ref="U1" pin="11"/>
+      <node ref="U1" pin="14"/>
     </net>
     <net code="28" name="Net-(C8-Pad2)">
-      <node ref="U1" pin="19"/>
       <node ref="U1" pin="17"/>
-      <node ref="U1" pin="16"/>
       <node ref="C8" pin="2"/>
+      <node ref="U1" pin="16"/>
+      <node ref="U1" pin="19"/>
     </net>
     <net code="29" name="/NTC Temp monitor/Temp1_in">
       <node ref="R10" pin="1"/>
-      <node ref="U1" pin="6"/>
       <node ref="C1" pin="2"/>
+      <node ref="U1" pin="6"/>
     </net>
     <net code="30" name="/NTC Temp monitor/Temp2_in">
-      <node ref="C3" pin="2"/>
       <node ref="U1" pin="13"/>
+      <node ref="C3" pin="2"/>
       <node ref="R11" pin="1"/>
     </net>
     <net code="31" name="/Vcc">
@@ -2227,26 +2227,26 @@
       <node ref="C4" pin="1"/>
     </net>
     <net code="32" name="/Battery_pack/A">
+      <node ref="D17" pin="1"/>
+      <node ref="D13" pin="1"/>
+      <node ref="D9" pin="1"/>
+      <node ref="D16" pin="1"/>
       <node ref="D12" pin="1"/>
-      <node ref="C13" pin="1"/>
-      <node ref="R33" pin="1"/>
-      <node ref="R25" pin="2"/>
-      <node ref="BT4" pin="1"/>
+      <node ref="D8" pin="1"/>
       <node ref="R26" pin="1"/>
-      <node ref="D5" pin="2"/>
-      <node ref="C3" pin="1"/>
+      <node ref="Cf1" pin="2"/>
+      <node ref="C13" pin="1"/>
       <node ref="U1" pin="10"/>
+      <node ref="D5" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R25" pin="2"/>
       <node ref="Cc3" pin="2"/>
       <node ref="R15" pin="1"/>
-      <node ref="D17" pin="1"/>
-      <node ref="D8" pin="1"/>
+      <node ref="R33" pin="1"/>
       <node ref="C7" pin="1"/>
+      <node ref="BT4" pin="1"/>
       <node ref="Cf2" pin="1"/>
-      <node ref="Cf1" pin="2"/>
-      <node ref="D16" pin="1"/>
-      <node ref="D13" pin="1"/>
-      <node ref="R11" pin="2"/>
-      <node ref="D9" pin="1"/>
     </net>
     <net code="33" name="Net-(R7-Pad3)">
       <node ref="R7" pin="3"/>
@@ -2257,31 +2257,31 @@
       <node ref="R7" pin="4"/>
     </net>
     <net code="35" name="Net-(D1-Pad1)">
-      <node ref="D1" pin="1"/>
-      <node ref="R4" pin="1"/>
-      <node ref="Q1" pin="S"/>
       <node ref="D3" pin="2"/>
       <node ref="D4" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="Q1" pin="S"/>
     </net>
     <net code="36" name="Net-(D1-Pad2)">
       <node ref="Q1" pin="D"/>
-      <node ref="D1" pin="2"/>
       <node ref="R1" pin="1"/>
+      <node ref="D1" pin="2"/>
     </net>
     <net code="37" name="/CHG">
       <node ref="U1" pin="2"/>
       <node ref="K1" pin="1"/>
     </net>
     <net code="38" name="Net-(C6-Pad1)">
-      <node ref="U1" pin="42"/>
       <node ref="C6" pin="1"/>
-      <node ref="R5" pin="1"/>
       <node ref="C9" pin="2"/>
+      <node ref="U1" pin="42"/>
+      <node ref="R5" pin="1"/>
     </net>
     <net code="39" name="Net-(C11-Pad1)">
-      <node ref="R8" pin="1"/>
       <node ref="C9" pin="1"/>
       <node ref="C11" pin="1"/>
+      <node ref="R8" pin="1"/>
       <node ref="U1" pin="43"/>
     </net>
     <net code="40" name="Net-(D2-Pad1)">
@@ -2298,56 +2298,56 @@
       <node ref="U1" pin="21"/>
     </net>
     <net code="44" name="/Battery_pack/BatteryVC3-4/VC_0d">
-      <node ref="D22" pin="1"/>
-      <node ref="BT3" pin="2"/>
-      <node ref="R24" pin="2"/>
       <node ref="BT2" pin="1"/>
       <node ref="R19" pin="1"/>
+      <node ref="BT3" pin="2"/>
       <node ref="Q4" pin="D"/>
+      <node ref="D22" pin="1"/>
+      <node ref="R24" pin="2"/>
     </net>
     <net code="45" name="/Battery_pack/VC4">
-      <node ref="R28" pin="1"/>
-      <node ref="C12" pin="1"/>
-      <node ref="R27" pin="1"/>
-      <node ref="BT3" pin="1"/>
-      <node ref="R22" pin="1"/>
       <node ref="C17" pin="2"/>
       <node ref="U1" pin="37"/>
+      <node ref="BT3" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="R27" pin="1"/>
+      <node ref="R22" pin="1"/>
     </net>
     <net code="46" name="/Battery_pack/VC9">
       <node ref="R47" pin="1"/>
-      <node ref="R41" pin="1"/>
-      <node ref="C23" pin="2"/>
-      <node ref="C18" pin="1"/>
       <node ref="R46" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="C23" pin="2"/>
+      <node ref="R41" pin="1"/>
       <node ref="U1" pin="31"/>
-      <node ref="BT9" pin="1"/>
       <node ref="D13" pin="2"/>
+      <node ref="BT9" pin="1"/>
     </net>
     <net code="47" name="/Battery_pack/BatteryVC8-9/VC_0d">
       <node ref="BT9" pin="2"/>
+      <node ref="D28" pin="1"/>
+      <node ref="R38" pin="1"/>
+      <node ref="R43" pin="2"/>
       <node ref="BT8" pin="1"/>
       <node ref="Q10" pin="D"/>
-      <node ref="D28" pin="1"/>
-      <node ref="R43" pin="2"/>
-      <node ref="R38" pin="1"/>
     </net>
     <net code="48" name="/Battery_pack/BatteryVC2-3/VC_0d">
-      <node ref="D21" pin="1"/>
-      <node ref="R21" pin="2"/>
-      <node ref="Q3" pin="D"/>
       <node ref="BT1" pin="1"/>
-      <node ref="R16" pin="1"/>
+      <node ref="D21" pin="1"/>
+      <node ref="Q3" pin="D"/>
       <node ref="BT2" pin="2"/>
+      <node ref="R16" pin="1"/>
+      <node ref="R21" pin="2"/>
     </net>
     <net code="49" name="/Battery_pack/BatteryVC0-1/Rx">
-      <node ref="BT1" pin="2"/>
-      <node ref="BT7" pin="1"/>
-      <node ref="Q2" pin="D"/>
-      <node ref="R35" pin="1"/>
-      <node ref="R18" pin="2"/>
       <node ref="R13" pin="2"/>
+      <node ref="Q2" pin="D"/>
+      <node ref="R18" pin="2"/>
       <node ref="D20" pin="1"/>
+      <node ref="BT7" pin="1"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="R35" pin="1"/>
     </net>
     <net code="50" name="/Battery_pack/BatteryVC10B-11/VC0_cap">
       <node ref="R49" pin="1"/>
@@ -2355,66 +2355,66 @@
       <node ref="R14" pin="2"/>
     </net>
     <net code="51" name="/Battery_pack/VC10b">
+      <node ref="U1" pin="29"/>
       <node ref="D15" pin="2"/>
       <node ref="Cc2" pin="2"/>
-      <node ref="U1" pin="29"/>
       <node ref="R50" pin="1"/>
     </net>
     <net code="52" name="/Battery_pack/BatteryVC13-14/VC_0d">
-      <node ref="R59" pin="2"/>
-      <node ref="Q15" pin="D"/>
-      <node ref="D33" pin="1"/>
       <node ref="BT14" pin="2"/>
       <node ref="BT13" pin="1"/>
+      <node ref="Q15" pin="D"/>
+      <node ref="D33" pin="1"/>
+      <node ref="R59" pin="2"/>
       <node ref="R54" pin="1"/>
     </net>
     <net code="53" name="/Battery_pack/VC14">
-      <node ref="C28" pin="2"/>
-      <node ref="R63" pin="1"/>
-      <node ref="R62" pin="1"/>
       <node ref="R57" pin="1"/>
-      <node ref="C21" pin="1"/>
       <node ref="D10" pin="2"/>
       <node ref="BT14" pin="1"/>
       <node ref="U1" pin="25"/>
+      <node ref="R63" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="R62" pin="1"/>
+      <node ref="C28" pin="2"/>
     </net>
     <net code="54" name="/Battery_pack/BatteryVC5b-6/Rx">
-      <node ref="R32" pin="1"/>
-      <node ref="BT6" pin="1"/>
       <node ref="R15" pin="2"/>
+      <node ref="BT6" pin="1"/>
+      <node ref="R32" pin="1"/>
     </net>
     <net code="55" name="/Battery_pack/VC5b">
       <node ref="U1" pin="35"/>
+      <node ref="D8" pin="2"/>
       <node ref="Cc3" pin="1"/>
       <node ref="R34" pin="1"/>
-      <node ref="D8" pin="2"/>
     </net>
     <net code="56" name="/Battery_pack/VC0">
-      <node ref="Cc1" pin="1"/>
       <node ref="R37" pin="1"/>
       <node ref="U1" pin="41"/>
+      <node ref="Cc1" pin="1"/>
     </net>
     <net code="57" name="/Battery_pack/BatteryVC7-8/VC_0d">
-      <node ref="Q9" pin="D"/>
-      <node ref="R29" pin="1"/>
-      <node ref="BT8" pin="2"/>
       <node ref="BT5" pin="1"/>
+      <node ref="BT8" pin="2"/>
       <node ref="D27" pin="1"/>
       <node ref="R40" pin="2"/>
+      <node ref="R29" pin="1"/>
+      <node ref="Q9" pin="D"/>
     </net>
     <net code="58" name="/Battery_pack/Battery12-13/VC_0d">
-      <node ref="R56" pin="2"/>
-      <node ref="BT13" pin="2"/>
-      <node ref="BT12" pin="1"/>
       <node ref="D32" pin="1"/>
+      <node ref="BT13" pin="2"/>
       <node ref="Q14" pin="D"/>
+      <node ref="BT12" pin="1"/>
       <node ref="R51" pin="1"/>
+      <node ref="R56" pin="2"/>
     </net>
     <net code="59" name="/Battery_pack/BatteryVC6-7/VC_0d">
+      <node ref="BT5" pin="2"/>
       <node ref="Q6" pin="D"/>
       <node ref="R31" pin="2"/>
       <node ref="D24" pin="1"/>
-      <node ref="BT5" pin="2"/>
     </net>
     <net code="60" name="Net-(Q2-PadS)">
       <node ref="R16" pin="2"/>
@@ -2422,37 +2422,37 @@
     </net>
     <net code="61" name="Net-(D20-Pad2)">
       <node ref="D20" pin="2"/>
-      <node ref="R17" pin="2"/>
       <node ref="Q2" pin="G"/>
+      <node ref="R17" pin="2"/>
     </net>
     <net code="62" name="Net-(D21-Pad2)">
-      <node ref="R20" pin="2"/>
-      <node ref="Q3" pin="G"/>
       <node ref="D21" pin="2"/>
+      <node ref="Q3" pin="G"/>
+      <node ref="R20" pin="2"/>
     </net>
     <net code="63" name="Net-(Q3-PadS)">
       <node ref="Q3" pin="S"/>
       <node ref="R19" pin="2"/>
     </net>
     <net code="64" name="Net-(D22-Pad2)">
+      <node ref="R23" pin="2"/>
       <node ref="Q4" pin="G"/>
       <node ref="D22" pin="2"/>
-      <node ref="R23" pin="2"/>
     </net>
     <net code="65" name="Net-(Q4-PadS)">
-      <node ref="R22" pin="2"/>
       <node ref="Q4" pin="S"/>
+      <node ref="R22" pin="2"/>
     </net>
     <net code="66" name="Net-(D23-Pad2)">
-      <node ref="R27" pin="2"/>
-      <node ref="Q5" pin="G"/>
       <node ref="D23" pin="2"/>
+      <node ref="Q5" pin="G"/>
+      <node ref="R27" pin="2"/>
     </net>
     <net code="67" name="/Battery_pack/BatteryVC4-5/Battery cell/-B">
-      <node ref="BT4" pin="2"/>
       <node ref="D23" pin="1"/>
-      <node ref="Q5" pin="D"/>
       <node ref="R28" pin="2"/>
+      <node ref="BT4" pin="2"/>
+      <node ref="Q5" pin="D"/>
     </net>
     <net code="68" name="Net-(Q5-PadS)">
       <node ref="R26" pin="2"/>
@@ -2460,112 +2460,112 @@
     </net>
     <net code="69" name="Net-(D24-Pad2)">
       <node ref="D24" pin="2"/>
-      <node ref="R30" pin="2"/>
       <node ref="Q6" pin="G"/>
+      <node ref="R30" pin="2"/>
     </net>
     <net code="70" name="Net-(Q6-PadS)">
       <node ref="R29" pin="2"/>
       <node ref="Q6" pin="S"/>
     </net>
     <net code="71" name="/Battery_pack/BatteryVC5b-6/Battery cell/-B">
-      <node ref="R34" pin="2"/>
       <node ref="BT6" pin="2"/>
-      <node ref="D25" pin="1"/>
       <node ref="Q7" pin="D"/>
+      <node ref="R34" pin="2"/>
+      <node ref="D25" pin="1"/>
     </net>
     <net code="72" name="Net-(D25-Pad2)">
-      <node ref="R33" pin="2"/>
       <node ref="D25" pin="2"/>
+      <node ref="R33" pin="2"/>
       <node ref="Q7" pin="G"/>
     </net>
     <net code="73" name="Net-(Q7-PadS)">
-      <node ref="Q7" pin="S"/>
       <node ref="R32" pin="2"/>
+      <node ref="Q7" pin="S"/>
     </net>
     <net code="74" name="/Battery_pack/BatteryVC0-1/Battery cell/-B">
-      <node ref="D26" pin="1"/>
       <node ref="BT7" pin="2"/>
-      <node ref="Q8" pin="D"/>
       <node ref="R37" pin="2"/>
+      <node ref="D26" pin="1"/>
+      <node ref="Q8" pin="D"/>
     </net>
     <net code="75" name="Net-(Q8-PadS)">
-      <node ref="Q8" pin="S"/>
       <node ref="R35" pin="2"/>
+      <node ref="Q8" pin="S"/>
     </net>
     <net code="76" name="Net-(D26-Pad2)">
+      <node ref="D26" pin="2"/>
       <node ref="R36" pin="2"/>
       <node ref="Q8" pin="G"/>
-      <node ref="D26" pin="2"/>
     </net>
     <net code="77" name="/Battery_pack/BatteryVC10B-11/Battery cell/-B">
-      <node ref="D30" pin="1"/>
       <node ref="Q12" pin="D"/>
-      <node ref="BT11" pin="2"/>
       <node ref="R50" pin="2"/>
+      <node ref="D30" pin="1"/>
+      <node ref="BT11" pin="2"/>
     </net>
     <net code="78" name="Net-(Q12-PadS)">
-      <node ref="R48" pin="2"/>
       <node ref="Q12" pin="S"/>
+      <node ref="R48" pin="2"/>
     </net>
     <net code="79" name="Net-(D30-Pad2)">
+      <node ref="Q12" pin="G"/>
       <node ref="R49" pin="2"/>
       <node ref="D30" pin="2"/>
-      <node ref="Q12" pin="G"/>
     </net>
-    <net code="80" name="Net-(D31-Pad2)">
-      <node ref="R52" pin="2"/>
-      <node ref="Q13" pin="G"/>
-      <node ref="D31" pin="2"/>
-    </net>
-    <net code="81" name="Net-(Q13-PadS)">
+    <net code="80" name="Net-(Q13-PadS)">
       <node ref="R51" pin="2"/>
       <node ref="Q13" pin="S"/>
     </net>
-    <net code="82" name="Net-(D32-Pad2)">
+    <net code="81" name="Net-(D31-Pad2)">
+      <node ref="Q13" pin="G"/>
+      <node ref="D31" pin="2"/>
+      <node ref="R52" pin="2"/>
+    </net>
+    <net code="82" name="Net-(Q14-PadS)">
+      <node ref="Q14" pin="S"/>
+      <node ref="R54" pin="2"/>
+    </net>
+    <net code="83" name="Net-(D32-Pad2)">
+      <node ref="R55" pin="2"/>
       <node ref="Q14" pin="G"/>
       <node ref="D32" pin="2"/>
-      <node ref="R55" pin="2"/>
-    </net>
-    <net code="83" name="Net-(Q14-PadS)">
-      <node ref="R54" pin="2"/>
-      <node ref="Q14" pin="S"/>
     </net>
     <net code="84" name="Net-(D33-Pad2)">
       <node ref="Q15" pin="G"/>
-      <node ref="R58" pin="2"/>
       <node ref="D33" pin="2"/>
+      <node ref="R58" pin="2"/>
     </net>
     <net code="85" name="Net-(Q15-PadS)">
       <node ref="Q15" pin="S"/>
       <node ref="R57" pin="2"/>
     </net>
-    <net code="86" name="Net-(D27-Pad2)">
-      <node ref="R39" pin="2"/>
-      <node ref="Q9" pin="G"/>
-      <node ref="D27" pin="2"/>
-    </net>
-    <net code="87" name="Net-(Q9-PadS)">
+    <net code="86" name="Net-(Q9-PadS)">
       <node ref="Q9" pin="S"/>
       <node ref="R38" pin="2"/>
     </net>
+    <net code="87" name="Net-(D27-Pad2)">
+      <node ref="D27" pin="2"/>
+      <node ref="Q9" pin="G"/>
+      <node ref="R39" pin="2"/>
+    </net>
     <net code="88" name="Net-(D28-Pad2)">
+      <node ref="D28" pin="2"/>
       <node ref="Q10" pin="G"/>
       <node ref="R42" pin="2"/>
-      <node ref="D28" pin="2"/>
     </net>
     <net code="89" name="Net-(Q10-PadS)">
       <node ref="R41" pin="2"/>
       <node ref="Q10" pin="S"/>
     </net>
-    <net code="90" name="Net-(Q11-PadS)">
-      <node ref="Q11" pin="S"/>
-      <node ref="R45" pin="2"/>
-    </net>
-    <net code="91" name="/Battery_pack/BatteryVC9-10/Battery cell/-B">
-      <node ref="BT10" pin="2"/>
-      <node ref="R47" pin="2"/>
-      <node ref="D29" pin="1"/>
+    <net code="90" name="/Battery_pack/BatteryVC9-10/Battery cell/-B">
       <node ref="Q11" pin="D"/>
+      <node ref="D29" pin="1"/>
+      <node ref="R47" pin="2"/>
+      <node ref="BT10" pin="2"/>
+    </net>
+    <net code="91" name="Net-(Q11-PadS)">
+      <node ref="R45" pin="2"/>
+      <node ref="Q11" pin="S"/>
     </net>
     <net code="92" name="Net-(D29-Pad2)">
       <node ref="Q11" pin="G"/>
@@ -2578,14 +2578,14 @@
       <node ref="D34" pin="1"/>
       <node ref="Q16" pin="D"/>
     </net>
-    <net code="94" name="Net-(D34-Pad2)">
-      <node ref="R62" pin="2"/>
-      <node ref="D34" pin="2"/>
-      <node ref="Q16" pin="G"/>
-    </net>
-    <net code="95" name="Net-(Q16-PadS)">
-      <node ref="R61" pin="2"/>
+    <net code="94" name="Net-(Q16-PadS)">
       <node ref="Q16" pin="S"/>
+      <node ref="R61" pin="2"/>
+    </net>
+    <net code="95" name="Net-(D34-Pad2)">
+      <node ref="R62" pin="2"/>
+      <node ref="Q16" pin="G"/>
+      <node ref="D34" pin="2"/>
     </net>
   </nets>
 </export>
