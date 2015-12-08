@@ -1491,7 +1491,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A668E)
-    (at 163.260286 58.729999)
+    (at 177.010286 34.909999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A56C17A)
@@ -1521,7 +1521,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A6694)
-    (at 155.290286 64.929999)
+    (at 169.040286 41.109999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A56C168)
@@ -1551,7 +1551,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A669A)
-    (at 157.770286 46.229999)
+    (at 171.520286 22.409999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A547AB5)
@@ -1581,7 +1581,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A66A0)
-    (at 173.710286 46.229999)
+    (at 187.460286 22.409999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A549A89)
@@ -1611,7 +1611,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A66A6)
-    (at 147.320286 68.619999)
+    (at 161.070286 44.799999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A56C174)
@@ -1641,7 +1641,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A66BE)
-    (at 147.320286 62.419999)
+    (at 161.070286 38.599999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A56C16E)
@@ -1671,7 +1671,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A66C4)
-    (at 155.820286 52.529999)
+    (at 169.570286 28.709999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A56C15C)
@@ -1701,7 +1701,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A66CA)
-    (at 147.320286 56.219999)
+    (at 161.070286 32.399999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A547CA6)
@@ -1731,7 +1731,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 565A66D0)
-    (at 171.760286 52.429999)
+    (at 185.510286 28.609999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A54B5D6)
@@ -2412,7 +2412,7 @@
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5415CDEB) (tstamp 565A67E2)
-    (at 108.42 48.02 90)
+    (at 108.8 49.67 90)
     (descr "Resistor SMD 0805, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0805")
     (path /558476E6)
@@ -4475,7 +4475,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 566704B3)
-    (at 163.790286 52.429999)
+    (at 177.540286 28.609999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A56C162)
@@ -4505,7 +4505,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 566704B8)
-    (at 155.290286 58.729999)
+    (at 169.040286 34.909999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A547BB0)
@@ -4535,7 +4535,7 @@
   )
 
   (module Diodes_SMD:SOD-123 (layer F.Cu) (tedit 5530FCB9) (tstamp 566704BD)
-    (at 165.740286 46.229999)
+    (at 179.490286 22.409999)
     (descr SOD-123)
     (tags SOD-123)
     (path /3A54B4D8)
